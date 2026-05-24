@@ -1,115 +1,72 @@
-<!--
-00-introduction.md — Book-level introduction.
-
-The Introduction does different work than the Preface:
-  - Preface  = why the book exists, why you wrote it (author's voice)
-  - Introduction = what the book argues and how it is organized (reader's roadmap)
-
-This file is a stub. Sections 1–10 and 12–13 are placeholders for a later pass.
-Section 11 (A note about AI) is substantive and written.
-
-A good model for the full version: Pearl's "The Mind Over Data" introduction,
-Molnar's Interpretable ML introduction. Both are argument-first and tell the
-reader exactly what to expect from each chapter.
--->
-
 # Introduction
 
-<!-- [1] COLD OPEN
-     A specific named scene with real stakes.
-     No "this book will...", no throat-clearing.
-     Open on a sentence that contains the whole problem.
-     Like the Swedish triage case in computational-skepticism-for-ai. -->
+A professional opens a familiar task and notices that the work has changed shape. The old bottleneck was production: finding the information, drafting the document, calculating the answer, building the artifact. The new bottleneck is judgment. A machine can now produce something fluent enough to move through the workflow. The harder question is whether it should.
 
-[COLD OPEN PLACEHOLDER]
+This book is about the gap between domain work as it used to be taught and domain work as it now has to be practiced with AI in the room.
 
-<!-- [2] THE CENTRAL CLAIM — one sentence.
-     "This book is about the gap between [X] and [Y]." -->
+The central argument is simple and contestable: the professional advantage in University Physics no longer comes from doing every step by hand. It comes from knowing what to delegate, what to verify, what to reject, and what human judgment must still own because the consequences attach to a person, a community, an institution, or a client.
 
-[CENTRAL CLAIM PLACEHOLDER]
-
-<!-- [3] THE CENTRAL ARGUMENT — a testable, contestable claim
-     about what the book is doing. -->
-
-[CENTRAL ARGUMENT PLACEHOLDER]
-
-<!-- [4] AUDIENCE LOCATION — one sentence locating who this is for. -->
-
-[AUDIENCE PLACEHOLDER]
-
----
+This is a textbook for readers who want to use AI without surrendering the part of the work that makes them responsible. It is for learners, teachers, practitioners, and contributors who need a practical map rather than another list of tools.
 
 ## What This Book Is
 
-<!-- [5] Scope. The work the book names. Vocabulary it teaches. -->
+University Physics: with LLMs is a guided course in the concepts, workflows, and judgment calls that define University Physics in the AI era. It teaches vocabulary, recurring patterns, practical exercises, and the discipline of checking machine output against human purpose.
 
-[SCOPE PLACEHOLDER]
+The book names the work that AI can accelerate and the work that still requires human interpretation. It treats AI as infrastructure: powerful, fast, useful, and incomplete. The point is not to become impressed by the machine. The point is to become more precise about what the human is for.
 
 ## What This Book Is Not
 
-<!-- [6] Explicit exclusions. Prerequisites. -->
+This book is not a promise that AI will solve University Physics. It is not a tool manual frozen to one product release. It is not legal, medical, financial, or professional advice for a specific jurisdiction or institution. When a chapter touches regulated practice, compliance, clinical care, finance, education policy, or public stakes, the reader should treat the material as a framework for judgment and seek qualified guidance where the decision requires it.
 
-[EXCLUSIONS PLACEHOLDER]
+The book assumes curiosity, basic literacy in the domain, and a willingness to test claims rather than merely repeat them. It does not assume that the reader is already an AI expert.
 
----
+## The Running Concept
 
-## A Central Concept That Runs Throughout
+The running concept is the boundary between execution and judgment. AI systems are increasingly strong at execution-shaped work: generating, summarizing, transforming, classifying, drafting, coding, and searching. Human beings remain responsible for problem formulation, plausibility auditing, causal interpretation, ethical tradeoffs, social context, and accountability under stakes.
 
-<!-- [7] A recurring idea readers should watch for across chapters.
-     Like "the fluency trap" in computational-skepticism-for-ai. -->
+A recurring danger is the fluency trap: the tendency to treat polished output as evidence that the underlying work has been done. Fluency is useful. It is not proof. Across the chapters, watch for the moment when a fluent artifact needs a human test.
 
-[CENTRAL CONCEPT PLACEHOLDER]
-
-<!-- [8] (OPTIONAL) A RUNNING NARRATIVE THREAD
-     A case that recurs across chapters as a worked example.
-     Like "Ash" in computational-skepticism-for-ai.
-     Delete this section if not using a running thread. -->
-
-## A Running Narrative Thread
-
-[NARRATIVE THREAD PLACEHOLDER — delete this section if not using one]
-
----
 
 ## How This Book Is Organized
 
-<!-- [9] Chapter-by-chapter map. Group into movements (clusters of 3–5)
-     if applicable. One sentence per chapter is enough. -->
+The chapters are arranged as a sequence of practical confrontations with the same larger problem: what changes when AI can do part of the work, but not own the consequences?
 
-[CHAPTER MAP PLACEHOLDER]
+1. **Chapter 2 — Units and Measurement** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
+2. **Chapter 3 — Vectors** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
+3. **Motion Along a Straight Line** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
+4. **Chapter 5: Motion in Two and Three Dimensions** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
+5. **Chapter 6 — Newton's Laws of Motion** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
+6. **Applications of Newton's Laws — Friction, Drag, and Centripetal Force** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
+7. **Chapter 8 — Work and Kinetic Energy** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
+8. **Chapter 9 — Potential Energy and Conservation of Energy** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
+9. **Chapter 9 — Linear Momentum and Collisions** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
+10. **Chapter 11 — Fixed-Axis Rotation** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
+11. **Chapter 12 — Angular Momentum** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
+12. **Static Equilibrium and Elasticity** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
+13. **Chapter 14 — Gravitation** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
+14. **Fluid Mechanics: How Things Flow** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
+15. **Chapter 17 — Oscillations** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
+16. **Waves: Patterns That Travel** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
+17. **Chapter 19 — Sound** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
 
-## How to Read This Book
+## How To Read This Book
 
-<!-- [10] Order. Prerequisites for skipping around.
-     Self-contained chapters. Chapter-closing features
-     (e.g., "What would change my mind", "Still puzzling", exercises). -->
+Read the opening chapters in order if you are new to the subject. They establish the vocabulary and the boundary conditions. Later chapters can usually be read as focused modules, especially if you are looking for a specific workflow, case, or professional risk.
 
-[READING GUIDE PLACEHOLDER]
+Do the exercises. The point of an AI-era textbook is not recognition. It is transfer: can you take the distinction from the page and use it on a task the book has never seen?
 
----
+## A Note About AI
 
-## A Note about AI
+This book was made in the same world it describes. Agentic AI systems were used to gather source material, draft candidate passages, check assertions, generate examples, and support editorial workflows. That does not make the book machine-authored. It makes the production boundary explicit.
 
-University physics covers the same content as college physics with greater mathematical depth — calculus-based mechanics, electromagnetism, thermodynamics, waves, and the foundations of modern physics. The model's strengths and weaknesses are the same as in any quantitative subject: conceptual fluency, computational unreliability. The note examines what that means at the calculus-based level.
+The editorial claim of the AI+1 series is that AI can help with execution while humans remain responsible for judgment. That means the book must be read with the same discipline it teaches. Claims should be checked. Examples should be tested. Definitions should be compared with practice. If something looks too smooth, slow down.
 
-The model has read every standard university physics text (Halliday-Resnick, Young-Freedman, Sears-Zemansky, Tipler). It explains principles, walks through derivations, translates between integral and differential forms of the same law, and produces canonical worked examples. The conceptual fluency is real and useful — university physics demands that students hold the same principle in multiple representations, and the model is good at producing alternative representations.
+The most important AI skill is not prompting. It is accountability. A prompt can produce output. A professional has to decide whether the output belongs in the world.
 
-Where the model genuinely helps: explaining the conceptual content of calculus-based mechanics (what Newton's second law as a differential equation buys you, why the work-energy theorem follows from F=ma, what the kinematic equations are integrating), walking through derivations with attention to which step is the physics move and which step is the mathematical move, producing alternative formulations of the same principle (Lagrangian vs. Newtonian formulations of mechanics, integral vs. differential forms of Maxwell's equations), and surfacing common misconceptions before they form.
+## Closing Return
 
-Where the model does damage: performing the actual integration, the actual vector decomposition, the actual boundary-value-problem solution. The model is fluent in symbolic manipulation and unreliable as a calculator at the precision university physics requires. It will drop signs, miss limits of integration, mishandle vector components, and confidently report numerical answers off by factors that any consistency check would catch.
+Return to the professional at the beginning: the familiar task, the new machine, the old responsibility. The machine has changed the tempo of the work. It has not removed the need for judgment. Start there. Then build.
 
-A specific failure mode worth naming: the model is particularly prone to errors in problems requiring careful attention to direction conventions — sign of gravity, direction of normal vectors in electromagnetism, sign conventions in optics. The errors are textbook-typical (the exact errors students make) which means model output cannot be used to check student work in a meaningful way.
+## Tags
 
-The rule that covers all three: principles and derivations from the model; the calculation from your pen, with consistency checks at every dimensional and limit-case boundary. University physics is taught through problem-solving at a level of precision the model is not reliable at. Use the model to understand. Do the work yourself.
-
----
-
-## Closing
-
-<!-- [12] Callback to the opening scene. End with a directive. -->
-
-[CLOSING PLACEHOLDER]
-
----
-
-**Tags:** <!-- [13] 5–8 discoverability tags --> [TAGS PLACEHOLDER]
+University Physics, AI+1, Humanitarians AI, Irreducibly Human, agentic AI, computational skepticism
