@@ -1,6 +1,6 @@
 # University Physics
 
-**Author:** Nik Bear Brown
+**Author:** Humanitarians AI
 
 **Folder:** `books/university-physics-bundle-with-llms/`
 
