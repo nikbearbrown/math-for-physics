@@ -1,0 +1,15 @@
+date,book,chapter_slug,word_count,sources_count,verify_flag_count,pantry_notes_found,pantry_lib_files_used,thin_pantry,mechanism_explained,contested_claims_flagged
+2026-05-30,math-for-physics,01-units-dimensions-and-estimation,2682,6,3,yes,0,no,Dimensional homogeneity as an equation constraint (Rayleigh's method for the pendulum period) and uncertainty propagation via log-differentiation,1
+2026-05-30,math-for-physics,02-algebra-and-equations-in-physics,2233,6,2,yes,0,no,Symbolic elimination on the Atwood machine and proportional/scaling (square-cube) reasoning,1
+2026-05-30,math-for-physics,03-trigonometry-and-geometry,2383,5,2,yes,0,no,Components from magnitude-and-angle and the small-angle approximation from the unit-circle arc,1
+2026-05-30,math-for-physics,04-vectors-and-vector-algebra,2348,5,0,yes,0,no,Dot product from the law of cosines; cross-product magnitude as parallelogram area,0
+2026-05-30,math-for-physics,05-functions-graphs-and-power-laws,3077,7,5,yes,0,no,Power law as a straight line on log-log axes; slope as the scaling exponent,1
+2026-05-30,math-for-physics,06-limits-and-the-derivative,2601,7,6,yes,0,no,The derivative from the limit of the difference quotient; velocity and acceleration as first and second derivatives,0
+2026-05-30,math-for-physics,07-differentiation-in-motion,2430,6,5,yes,0,no,Componentwise differentiation and centripetal acceleration from differentiating a rotating unit vector,0
+2026-05-30,math-for-physics,08-the-integral,2540,6,5,yes,0,no,The definite integral as the limit of a Riemann sum and the Fundamental Theorem of Calculus,0
+2026-05-30,math-for-physics,09-integration-techniques-and-applications,2851,6,5,yes,0,no,Moment-of-inertia integral int r^2 dm for rod and disk; gravitational PE from int F·dr,0
+2026-05-30,math-for-physics,10-linear-systems-and-matrices,2983,6,6,yes,0,no,Solving an equilibrium 2x2 system three ways; the determinant as the solvability denominator,2
+2026-05-30,math-for-physics,11-differential-equations-and-oscillatory-motion,2781,6,6,yes,0,no,Solving x''=-omega^2 x and the characteristic-equation method on the damped oscillator,0
+2026-05-30,math-for-physics,12-complex-numbers-and-exponentials,2594,5,6,yes,0,no,Euler's formula from the power series; oscillation as Re(A e^{i omega t}),0
+2026-05-30,math-for-physics,13-series-expansions-and-approximations,2824,6,8,yes,0,no,Maclaurin series of sin/cos/exp and small-angle linearization as a one-term truncation,1
+2026-05-30,math-for-physics,14-partial-derivatives-wave-equation-and-fourier,3633,5,6,yes,0,no,The wave equation from F=ma on a string element; periodic signal as a Fourier sum,0

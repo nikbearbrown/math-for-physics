@@ -1,72 +1,44 @@
 # Introduction
 
-A professional opens a familiar task and notices that the work has changed shape. The old bottleneck was production: finding the information, drafting the document, calculating the answer, building the artifact. The new bottleneck is judgment. A machine can now produce something fluent enough to move through the workflow. The harder question is whether it should.
+*The physics course is a math course wearing a lab coat.*
 
-This book is about the gap between domain work as it used to be taught and domain work as it now has to be practiced with AI in the room.
+Here is a confession that most physics textbooks will not make to your face: the introductory physics sequence is, underneath, a sequence of *mathematical tools*. Units and dimensional analysis. Algebra and proportional reasoning. Trigonometry. Vectors. Functions and graphs. Limits and the derivative. The integral. Linear systems. Differential equations. Complex exponentials. Series. Partial derivatives and the wave equation. That list is the table of contents of this book. It is also — rearranged, renamed, and hidden inside problems about blocks and springs and skydivers — the table of contents of your physics course.
 
-The central argument is simple and contestable: the professional advantage in University Physics no longer comes from doing every step by hand. It comes from knowing what to delegate, what to verify, what to reject, and what human judgment must still own because the consequences attach to a person, a community, an institution, or a client.
+The standard order presents the physics first and lets you discover the math you need, mid-problem, usually at the worst possible moment. You are halfway through a projectile problem when it turns out you needed to resolve a velocity into components, and you are now learning trigonometry under deadline. You meet the derivative as "instantaneous velocity" and never quite notice that you have learned a general operation that has nothing to do with motion. This book inverts that. **The math is the subject. The physics is the example.**
 
-This is a textbook for readers who want to use AI without surrendering the part of the work that makes them responsible. It is for learners, teachers, practitioners, and contributors who need a practical map rather than another list of tools.
+## The thesis
 
-## What This Book Is
+The claim is simple and it has teeth: if you learn the math *as math* — derived, general, transferable — then the physics becomes the place you *use* it, not the thing you must memorize. A student who has memorized "for an Atwood machine, $a = (m_2 - m_1)g/(m_1+m_2)$" has a fact that evaporates after the exam. A student who can isolate a variable in a multi-term relation, then read the result — *the system is stationary when the masses are equal; it free-falls when one mass vanishes* — has a skill that works on any relation among quantities, in any field, for the rest of their life.
 
-University Physics: with LLMs is a guided course in the concepts, workflows, and judgment calls that define University Physics in the AI era. It teaches vocabulary, recurring patterns, practical exercises, and the discipline of checking machine output against human purpose.
+There is a body of education research behind this, and it is unkind to the memorize-the-formula approach. Intro-physics students reliably do *worse* on a symbolic version of a problem than on a numerically identical one — which means that many students who can "do physics" do not actually understand the relations; they understand the arithmetic. The cure is to treat the mathematics as the thing worth understanding. That is what this book is.
 
-The book names the work that AI can accelerate and the work that still requires human interpretation. It treats AI as infrastructure: powerful, fast, useful, and incomplete. The point is not to become impressed by the machine. The point is to become more precise about what the human is for.
+## How to use this book
 
-## What This Book Is Not
+Every chapter has the same skeleton, and it is worth knowing the skeleton so you can read against it:
 
-This book is not a promise that AI will solve University Physics. It is not a tool manual frozen to one product release. It is not legal, medical, financial, or professional advice for a specific jurisdiction or institution. When a chapter touches regulated practice, compliance, clinical care, finance, education policy, or public stakes, the reader should treat the material as a framework for judgment and seek qualified guidance where the decision requires it.
+1. **A cold open** — one concrete physics problem the chapter's math is required to solve, stated with no math yet. This is the *why*.
+2. **The tool, named** — a plain statement of the mathematical object or method.
+3. **Development and derivation** — the math built on the page. Where a formula appears, you will see where it comes from. Nothing is asserted that can be derived.
+4. **Worked examples** — two or three, drawn from real mechanics-and-waves problems.
+5. **Return to the cold open** — the opening problem, now solved with the tool.
+6. **Where it generalizes** — a short look at where this math goes next, in physics and far beyond it.
 
-The book assumes curiosity, basic literacy in the domain, and a willingness to test claims rather than merely repeat them. It does not assume that the reader is already an AI expert.
+Then a few exercises (at least one asks you to *derive*, not plug) and a list of sources.
 
-## The Running Concept
+Read in order if you are new; the tools stack. Vectors (Chapter 4) lean on trigonometry (Chapter 3); the derivative (Chapter 6) leans on functions and graphs (Chapter 5); everything in Part III leans on the calculus of Part II. If you are using the book as a reference, jump to the tool you need — but do not skip the derivations, because the derivation *is* the understanding.
 
-The running concept is the boundary between execution and judgment. AI systems are increasingly strong at execution-shaped work: generating, summarizing, transforming, classifying, drafting, coding, and searching. Human beings remain responsible for problem formulation, plausibility auditing, causal interpretation, ethical tradeoffs, social context, and accountability under stakes.
+A note on honesty: this book is calibrated. When something is proved, it says so. When something is asserted because the full proof is beyond our scope, it says that too. Citations that have not been individually confirmed against the original source are flagged `[verify]`. Claims that are genuinely contested in the research carry a flag pointing you to the discussion. You are being trained to be tested on derivations, so you deserve to know which steps are airtight and which are hand-waves.
 
-A recurring danger is the fluency trap: the tendency to treat polished output as evidence that the underlying work has been done. Fluency is useful. It is not proof. Across the chapters, watch for the moment when a fluent artifact needs a human test.
+## The three-part map
 
+**Part I — Quantities and Geometry (the language).** Before you can do calculus on a physical quantity, you have to know what a physical quantity *is*: a number with a dimension, an uncertainty, and — often — a direction. Chapters 1 through 4 build that language: dimensional analysis and estimation, algebra and proportionality, trigonometry, and vectors. This is the grammar. Skip it and everything later is mumbling.
 
-## How This Book Is Organized
+**Part II — Calculus (the engine).** Chapters 5 through 9 build calculus from functions and graphs, through limits and the derivative, to the integral and its applications — motivated throughout by motion, work, and the shapes of physical systems. This is the engine room of intro physics. Almost every result you will ever derive runs through here.
 
-The chapters are arranged as a sequence of practical confrontations with the same larger problem: what changes when AI can do part of the work, but not own the consequences?
+**Part III — Systems and Change (the hard tools).** Chapters 10 through 14 are where the mathematics gets genuinely powerful: linear systems and matrices, differential equations and oscillation, complex exponentials, series and approximations, and finally partial derivatives and the wave equation with a first taste of Fourier analysis. These are the tools that turn "a mass on a spring" into a complete theory of vibration, sound, and waves.
 
-1. **Chapter 2 — Units and Measurement** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
-2. **Chapter 3 — Vectors** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
-3. **Motion Along a Straight Line** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
-4. **Chapter 5: Motion in Two and Three Dimensions** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
-5. **Chapter 6 — Newton's Laws of Motion** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
-6. **Applications of Newton's Laws — Friction, Drag, and Centripetal Force** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
-7. **Chapter 8 — Work and Kinetic Energy** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
-8. **Chapter 9 — Potential Energy and Conservation of Energy** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
-9. **Chapter 9 — Linear Momentum and Collisions** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
-10. **Chapter 11 — Fixed-Axis Rotation** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
-11. **Chapter 12 — Angular Momentum** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
-12. **Static Equilibrium and Elasticity** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
-13. **Chapter 14 — Gravitation** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
-14. **Fluid Mechanics: How Things Flow** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
-15. **Chapter 17 — Oscillations** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
-16. **Waves: Patterns That Travel** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
-17. **Chapter 19 — Sound** — This chapter develops one part of the book's argument and gives the reader a concrete place to practice it.
+## Volume 1 and Volume 2
 
-## How To Read This Book
+This is **Volume 1**: the mathematics of the *first* physics course — mechanics and waves, the math you can carry on calculus taken concurrently. It stops where the introductory sequence stops. **Volume 2** is the sequel for the courses that follow: the full machinery of multivariable and vector calculus (the divergence and curl theorems that electromagnetism demands), the deeper linear algebra, and the partial differential equations of fields. Where a topic in this book has a richer life in the advanced sequence — and many do — you will see a forward pointer to "Volume 2." Think of Volume 1 as the tools you can hold in one hand, and Volume 2 as the workshop you graduate into.
 
-Read the opening chapters in order if you are new to the subject. They establish the vocabulary and the boundary conditions. Later chapters can usually be read as focused modules, especially if you are looking for a specific workflow, case, or professional risk.
-
-Do the exercises. The point of an AI-era textbook is not recognition. It is transfer: can you take the distinction from the page and use it on a task the book has never seen?
-
-## A Note About AI
-
-This book was made in the same world it describes. Agentic AI systems were used to gather source material, draft candidate passages, check assertions, generate examples, and support editorial workflows. That does not make the book machine-authored. It makes the production boundary explicit.
-
-The editorial claim of the AI+1 series is that AI can help with execution while humans remain responsible for judgment. That means the book must be read with the same discipline it teaches. Claims should be checked. Examples should be tested. Definitions should be compared with practice. If something looks too smooth, slow down.
-
-The most important AI skill is not prompting. It is accountability. A prompt can produce output. A professional has to decide whether the output belongs in the world.
-
-## Closing Return
-
-Return to the professional at the beginning: the familiar task, the new machine, the old responsibility. The machine has changed the tempo of the work. It has not removed the need for judgment. Start there. Then build.
-
-## Tags
-
-University Physics, AI+1, Humanitarians AI, Irreducibly Human, agentic AI, computational skepticism
+Now begin. Pick up the first tool.
