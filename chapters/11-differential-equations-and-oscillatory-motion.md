@@ -75,7 +75,7 @@ $$\ddot{x} = -A\omega^2\cos\omega t - B\omega^2\sin\omega t = -\omega^2(A\cos\om
 
 It checks. The proposed function satisfies the equation for *any* $A$ and $B$ — that two-constant freedom is exactly right for a second-order equation (a second derivative needs two integrations, hence two constants). This is the **general solution**.
 
-Why two constants, and why does the sum work? Because the equation is **linear**: if $x_1$ and $x_2$ are each solutions, so is any combination $Ax_1 + Bx_2$. Linearity buys **superposition** — the single most important property in this book, and the foundation of everything in Chapter 14. Daniel Bernoulli already used it on vibrating strings in the 1730s [verify].
+Why two constants, and why does the sum work? Because the equation is **linear**: if $x_1$ and $x_2$ are each solutions, so is any combination $Ax_1 + Bx_2$. Linearity buys **superposition** — the single most important property in this book, and the foundation of everything in Chapter 14. Daniel Bernoulli applied it to vibrating strings, stating the superposition principle formally in 1753.
 
 ### Pinning down the constants with initial conditions
 
@@ -91,6 +91,9 @@ The period follows because cosine repeats every $2\pi$ radians of phase: $\omega
 $$T = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{m}{k}}.$$
 
 Notice what is *not* in this formula: the amplitude $A$. The period of a simple harmonic oscillator is independent of how far you pull it — the secret behind every pendulum clock. A stiffer spring (larger $k$) or a lighter mass (smaller $m$) means a higher $\omega$ and a shorter period: the oscillation is *faster*. That interpretive sentence is something a computer-algebra system, which would spit out $A\cos\omega t + B\sin\omega t$ in a blink, cannot supply.
+
+![The harmonic-oscillator solution x(t) = A cos(ωt): a cosine curve with its amplitude A and period T marked.](images/11-differential-equations-and-oscillatory-motion-fig-01.png)
+*Figure 11.1 — The solution x(t) = A cos(ωt). The amplitude A is set by the release; the period T = 2π/ω is set by ω alone — independent of how far the mass is pulled.*
 
 ### The characteristic-equation method: the general engine
 
@@ -113,6 +116,9 @@ The entire behavior of the oscillator is now read off the discriminant $b^2 - 4m
 - **Overdamped** ($b^2 > 4mk$): two *distinct real* roots, both negative. Sluggish, non-oscillating return.
 
 Three physical regimes, three cases of a quadratic's roots. The characteristic equation has converted a question about motion into a question about where a parabola crosses zero — calculus traded for algebra. Set $b = 0$ and the roots become $r = \pm i\omega$ purely imaginary, recovering the undamped cosine-and-sine solution. The method contains the special case.
+
+![Three displacement-versus-time curves: an underdamped curve oscillating inside a decaying envelope, a critically damped curve returning quickly without overshoot, and an overdamped curve returning slowly.](images/11-differential-equations-and-oscillatory-motion-fig-02.png)
+*Figure 11.2 — The three damping regimes. The sign of the discriminant b² − 4mk decides whether the mass oscillates inside a decaying envelope (underdamped), returns fastest without overshoot (critically damped), or returns sluggishly (overdamped).*
 
 ## Worked examples
 
@@ -177,6 +183,6 @@ What a solver cannot do is the part that matters: decide that the force is $-kx$
 - Isaac Newton, *Philosophiæ Naturalis Principia Mathematica* (1687) — second law and fluxion (derivative) notation; the seed of the restoring-force equation. [verify]
 - Robert Hooke, *Lectures de Potentia Restitutiva* (1678), "ut tensio sic vis" — the linear force law $F = -kx$. [verify]
 - Leonhard Euler, "De integratione aequationum differentialium altiorum graduum" (1743, Euler Archive E62) — the exponential substitution $x = e^{rt}$ reducing a linear ODE to its characteristic equation. [verify]
-- Daniel Bernoulli, vibrating-string work (1730s) — early recognition of superposition for linear oscillation. [verify]
+- Daniel Bernoulli, vibrating-string work — formal statement of superposition for linear oscillation, 1753 (partial-tone recognition 1741–43, pub. 1751).
 - MIT OpenCourseWare 8.03 *Vibrations and Waves*, Ch. 1, and UT Austin "Mass on Spring" notes — modern derivations of $\ddot{x} = -\omega^2 x$ and its solution.
 - Source physics: *Oscillations* (mass on a spring, damped oscillator, simple pendulum) and *Gravitation*, retained physics chapters 17 and 14.

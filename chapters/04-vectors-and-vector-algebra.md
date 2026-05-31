@@ -63,6 +63,9 @@ $$\boxed{\,\vec{A}\cdot\vec{B} = |\vec{A}||\vec{B}|\cos\varphi\,.}$$
 
 This is the alignment law. Read it: the dot product is largest when the vectors are parallel ($\cos 0 = 1$), zero when they are perpendicular ($\cos 90° = 0$), negative when they point apart. Geometrically, $|\vec{A}|\cos\varphi$ is the **projection** — the shadow — of $\vec{A}$ onto the direction of $\vec{B}$, so the dot product is "the length of $\vec{B}$ times how much of $\vec{A}$ lies along it." And it gives you the angle between any two vectors for free: $\cos\varphi = (\vec{A}\cdot\vec{B})/(|\vec{A}||\vec{B}|)$.
 
+![Two vectors A and B from a common origin with angle φ; a perpendicular dropped from the tip of A onto the line of B marks the projection |A|cosφ, and a side panel reads the sign of A·B at φ = 0, 90°, and beyond.](images/04-vectors-and-vector-algebra-fig-02.png)
+*Figure 4.2 — The dot product is a shadow: A·B = |A||B|cosφ measures how much of A lies along B.*
+
 ### The cross product: deriving the area–twist link
 
 The **cross product** $\vec{A}\times\vec{B}$ produces a *vector*. From components it is the determinant
@@ -80,6 +83,9 @@ The *direction* of $\vec{A}\times\vec{B}$ is perpendicular to both, given by the
 $$\vec{B}\times\vec{A} = -(\vec{A}\times\vec{B}),$$
 
 curling the other way flips the thumb. The unit vectors obey a cyclic pattern, $\hat{\imath}\times\hat{\jmath} = \hat{k}$, $\hat{\jmath}\times\hat{k} = \hat{\imath}$, $\hat{k}\times\hat{\imath} = \hat{\jmath}$, and any unit vector crossed with itself is zero.
+
+![Two vectors A and B spanning a shaded parallelogram of area |A||B|sinφ, with height |B|sinφ marked and the cross product A×B drawn as an arrow out of the plane by the right-hand rule; a panel notes B×A = −(A×B).](images/04-vectors-and-vector-algebra-fig-03.png)
+*Figure 4.3 — The cross product magnitude is the oriented area the two vectors span; the right-hand rule is a convention for encoding that area as a perpendicular arrow.*
 
 The pair is the whole chapter: **dot = alignment (a number), cross = twist/oriented area (a vector).** Choosing which one a problem needs is the skill.
 
@@ -117,7 +123,10 @@ The pilot's problem is pure vector addition. Set up axes (east $= \hat{\imath}$,
 
 $$\vec{v}_{\text{ground}} \approx (84.9 + 17.7)\hat{\imath} + (84.9 - 17.7)\hat{\jmath} = 102.6\,\hat{\imath} + 67.2\,\hat{\jmath}\ \text{knots}.$$
 
-The ground speed is $|\vec{v}_{\text{ground}}| = \sqrt{102.6^2 + 67.2^2} \approx 123$ knots, at heading $\tan^{-1}(67.2/102.6) \approx 33°$ north of east — *not* the northeast ($45°$) the nose points, and *not* 120 knots. The wind has pushed the plane south of its heading and slightly sped it up. You could only get this by treating the velocities as arrows and adding their components — the exact operation ordinary numbers cannot perform. Miss it, and you miss the island.
+The ground speed is $|\vec{v}_{\text{ground}}| = \sqrt{102.6^2 + 67.2^2} \approx 123$ knots, at heading $\tan^{-1}(67.2/102.6) \approx 33°$ north of east — *not* the northeast ($45°$) the nose points, and *not* 120 knots.
+
+![Tip-to-tail vector addition on east-north axes: the plane's airspeed vector (NE) plus the wind vector (toward SE) gives a ground velocity of about 123 knots at roughly 33° north of east.](images/04-vectors-and-vector-algebra-fig-01.png)
+*Figure 4.1 — Velocities add as arrows, component by component; the wind pushes the plane south of its heading and slightly speeds it up.* The wind has pushed the plane south of its heading and slightly sped it up. You could only get this by treating the velocities as arrows and adding their components — the exact operation ordinary numbers cannot perform. Miss it, and you miss the island.
 
 ## Where it generalizes
 

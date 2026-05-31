@@ -1,0 +1,50 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Taylor approximations of sine converging</title>
+  <desc id="desc">The curve y equals sine x with its one-term, two-term, and three-term Maclaurin approximations. Each truncation hugs the sine curve near the origin and peels away farther out; adding more terms widens the region of good agreement.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="420" fill="#FFFFFF"/>
+  <text x="32" y="36" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#2a1a0e">More terms, wider agreement: Taylor polynomials approaching sin x</text>
+  <text x="32" y="54" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">sin x = x &#8722; x&#179;/3! + x&#8309;/5! &#8722; &#8943; &#160; Each added term tracks the true curve farther from the origin.</text>
+
+  <!-- axes: y=0 at py210, x=0 at px100 -->
+  <line x1="100" y1="210" x2="668" y2="210" stroke="#2a1a0e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="100" y1="358" x2="100" y2="70" stroke="#2a1a0e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="670" y="226" font-family="'EB Garamond', Georgia, serif" font-size="11" font-style="italic" fill="#2a1a0e">x</text>
+  <text x="92" y="74" text-anchor="end" font-family="'EB Garamond', Georgia, serif" font-size="11" font-style="italic" fill="#2a1a0e">y</text>
+  <!-- y ticks at +1 (py140) and -1 (py280) -->
+  <line x1="96" y1="140" x2="104" y2="140" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="92" y="144" text-anchor="end" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#545454">1</text>
+  <line x1="96" y1="280" x2="104" y2="280" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="90" y="284" text-anchor="end" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#545454">&#8722;1</text>
+  <!-- x ticks: 1(205.8) 2(311.5) pi(432.3) 4(523.1) 5(628.8) -->
+  <text x="205.8" y="226" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#545454">1</text>
+  <text x="311.5" y="226" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#545454">2</text>
+  <text x="432.3" y="226" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#545454">&#960;</text>
+  <text x="523.1" y="226" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#545454">4</text>
+  <text x="628.8" y="226" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#545454">5</text>
+
+  <!-- true sin x (ink, solid, thick) -->
+  <polyline fill="none" stroke="#2a1a0e" stroke-width="2.4" points="100.0,210.0 110.6,203.0 121.2,196.1 131.7,189.3 142.3,182.7 152.9,176.4 163.5,170.5 174.0,164.9 184.6,159.8 195.2,155.2 205.8,151.1 216.3,147.6 226.9,144.8 237.5,142.6 248.1,141.0 258.7,140.2 269.2,140.0 279.8,140.6 290.4,141.8 301.0,143.8 311.5,146.3 322.1,149.6 332.7,153.4 343.3,157.8 353.8,162.7 364.4,168.1 375.0,173.9 385.6,180.1 396.2,186.6 406.7,193.3 417.3,200.1 427.9,207.1 438.5,214.1 449.0,221.0 459.6,227.9 470.2,234.6 480.8,241.0 491.3,247.1 501.9,252.8 512.5,258.1 523.1,263.0 533.7,267.3 544.2,271.0 554.8,274.1 565.4,276.6 576.0,278.4 586.5,279.6 597.1,280.0 607.7,279.7 618.3,278.8 628.8,277.1 639.4,274.8 650.0,271.8"/>
+
+  <!-- 1-term y=x (brown) -->
+  <polyline fill="none" stroke="#6B3520" stroke-width="1.8" points="100.0,210.0 121.2,196.0 142.3,182.0 163.5,168.0 184.6,154.0 205.8,140.0 226.9,126.0 248.1,112.0 269.2,98.0 290.4,84.0 301.0,77.0"/>
+  <text x="296" y="72" font-family="'EB Garamond', Georgia, serif" font-size="10" fill="#6B3520">y = x &#160;(1 term)</text>
+
+  <!-- 2-term (medium grey ink) -->
+  <polyline fill="none" stroke="#545454" stroke-width="1.6" points="100.0,210.0 121.2,196.1 142.3,182.7 163.5,170.5 184.6,160.0 205.8,151.7 226.9,146.2 248.1,144.0 269.2,145.8 290.4,152.0 311.5,163.3 332.7,180.2 353.8,203.3 375.0,233.1 396.2,270.1 415.2,310.1 427.9,340.6"/>
+  <text x="350" y="300" font-family="'EB Garamond', Georgia, serif" font-size="10" fill="#545454">x &#8722; x&#179;/6 &#160;(2 terms)</text>
+
+  <!-- 3-term (red) -->
+  <polyline fill="none" stroke="#C8102E" stroke-width="2" points="100.0,210.0 121.2,196.1 142.3,182.7 163.5,170.5 184.6,159.8 205.8,151.1 226.9,144.7 248.1,140.9 269.2,139.7 290.4,141.0 311.5,144.7 332.7,150.2 353.8,156.8 375.0,163.7 396.2,169.7 417.3,173.2 438.5,172.6 459.6,165.5 480.8,149.6 501.9,122.0 518.8,89.2 523.1,79.3"/>
+  <text x="455" y="190" font-family="'EB Garamond', Georgia, serif" font-size="10" font-weight="bold" fill="#C8102E">x &#8722; x&#179;/6 + x&#8309;/120 &#160;(3 terms)</text>
+
+  <!-- legend marker for sin x -->
+  <line x1="540" y1="305" x2="566" y2="305" stroke="#2a1a0e" stroke-width="2.4"/>
+  <text x="572" y="309" font-family="'EB Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">sin x (exact)</text>
+
+  <text x="350" y="402" text-anchor="middle" font-family="'EB Garamond', Georgia, serif" font-size="11" fill="#2a1a0e">Near x = 0 all four coincide. The one-term line peels off first; the three-term curve tracks sin x furthest.</text>
+</svg>

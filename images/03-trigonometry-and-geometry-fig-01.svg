@@ -1,0 +1,57 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">The unit circle as home of sine, cosine, and tangent</title>
+  <desc id="desc">A circle of radius one with a point at angle theta from the positive x-axis located at coordinates cosine theta, sine theta. The horizontal leg is cosine theta, the vertical leg is sine theta, and the arc length equals theta in radians.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="420" fill="#FFFFFF"/>
+  <text x="32" y="40" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#2a1a0e">Cosine and sine are coordinates on the unit circle</text>
+  <text x="32" y="58" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">For any angle θ measured from the +x axis, the point on the circle of radius 1 sits at (cos θ, sin θ).</text>
+
+  <!-- center of circle -->
+  <!-- cx=260 cy=250 r=150 -->
+  <!-- axes -->
+  <line x1="90" y1="250" x2="440" y2="250" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="260" y1="410" x2="260" y2="80" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="446" y="254" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">x</text>
+  <text x="266" y="86" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">y</text>
+
+  <!-- circle -->
+  <circle cx="260" cy="250" r="150" fill="none" stroke="#D4D4D4" stroke-width="1.2"/>
+  <!-- radius/point at theta = 50deg : cos50=0.643, sin50=0.766 -> x=260+96.4=356.4, y=250-114.9=135.1 -->
+  <line x1="260" y1="250" x2="356" y2="135" stroke="#C8102E" stroke-width="2"/>
+  <circle cx="356" cy="135" r="4" fill="#C8102E"/>
+  <!-- cos leg (horizontal) -->
+  <line x1="260" y1="250" x2="356" y2="250" stroke="#6B3520" stroke-width="2"/>
+  <!-- sin leg (vertical, dashed up to point) -->
+  <line x1="356" y1="250" x2="356" y2="135" stroke="#6B3520" stroke-width="2"/>
+  <!-- right-angle mark -->
+  <polyline points="344,250 344,238 356,238" fill="none" stroke="#6B3520" stroke-width="1"/>
+
+  <!-- angle arc theta -->
+  <path d="M 300 250 A 40 40 0 0 0 285.7 221.4" fill="none" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="296" y="234" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">θ</text>
+
+  <!-- arc length label on circle -->
+  <text x="300" y="120" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">arc length = θ (radians)</text>
+
+  <!-- labels -->
+  <text x="308" y="270" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#6B3520">cos θ</text>
+  <text x="392" y="196" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#6B3520">sin θ</text>
+  <text x="300" y="186" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#C8102E">radius 1</text>
+  <text x="364" y="128" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">(cos θ, sin θ)</text>
+
+  <!-- side panel -->
+  <rect x="480" y="120" width="188" height="200" fill="#F5EFE8" stroke="#D4D4D4" stroke-width="1"/>
+  <text x="496" y="146" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.08em" fill="#545454">THE THREE RATIOS</text>
+  <text x="496" y="180" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">cos θ = adjacent / hyp</text>
+  <text x="496" y="212" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">sin θ = opposite / hyp</text>
+  <text x="496" y="244" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">tan θ = sin θ / cos θ</text>
+  <line x1="496" y1="262" x2="652" y2="262" stroke="#D4D4D4" stroke-width="1"/>
+  <text x="496" y="288" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">cos²θ + sin²θ = 1</text>
+  <text x="496" y="306" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">(Pythagoras on the circle)</text>
+
+  <text x="350" y="398" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">The circle removes the 90° cap of the right triangle: θ can be any angle, and the functions become periodic.</text>
+</svg>

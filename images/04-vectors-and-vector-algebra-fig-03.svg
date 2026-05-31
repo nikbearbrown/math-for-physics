@@ -1,0 +1,54 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">The cross product as oriented area and the right-hand rule</title>
+  <desc id="desc">Two vectors A and B span a parallelogram whose area, the magnitude of A times the magnitude of B times sine phi, is the magnitude of the cross product. The cross product A cross B points perpendicular to both by the right-hand rule; reversing to B cross A flips the direction.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+    <marker id="arrowred" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#C8102E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="420" fill="#FFFFFF"/>
+  <text x="32" y="40" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#2a1a0e">The cross product is an oriented area</text>
+  <text x="32" y="58" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">|A×B| = |A||B|sin φ is the area of the parallelogram A and B span; its direction is the right-hand-rule normal.</text>
+
+  <!-- origin (130,330). A horizontal length 300 -> (430,330). B at 55deg length 230 -> (130+131.9,330-188.4)=(262,142) -->
+  <!-- parallelogram vertices: O(130,330) A-tip(430,330) (A+B)(562,142) B-tip(262,142) -->
+  <polygon points="130,330 430,330 562,142 262,142" fill="#F5EFE8" stroke="#D4D4D4" stroke-width="1"/>
+
+  <!-- A vector -->
+  <line x1="130" y1="330" x2="430" y2="330" stroke="#2a1a0e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="280" y="350" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" fill="#2a1a0e">A (base)</text>
+  <!-- B vector -->
+  <line x1="130" y1="330" x2="262" y2="142" stroke="#C8102E" stroke-width="2" marker-end="url(#arrowred)"/>
+  <text x="178" y="226" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" fill="#C8102E">B</text>
+
+  <!-- height |B|sin phi: from B-tip drop perpendicular to A line at (262,330) -->
+  <line x1="262" y1="142" x2="262" y2="330" stroke="#545454" stroke-width="1" stroke-dasharray="5 3"/>
+  <polyline points="250,330 250,318 262,318" fill="none" stroke="#545454" stroke-width="1"/>
+  <text x="270" y="240" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">height = |B| sin φ</text>
+
+  <!-- angle phi at origin -->
+  <path d="M 190 330 A 60 60 0 0 0 164 280" fill="none" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="196" y="312" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">φ</text>
+
+  <!-- area label inside -->
+  <text x="346" y="248" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">area = |A||B| sin φ</text>
+
+  <!-- A x B out-of-plane: draw small circle-dot at centroid with arrow up -->
+  <circle cx="346" cy="236" r="0" fill="none"/>
+  <line x1="470" y1="200" x2="470" y2="120" stroke="#2a1a0e" stroke-width="2" marker-end="url(#arrow)"/>
+  <circle cx="470" cy="200" r="9" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1.2"/>
+  <circle cx="470" cy="200" r="2.5" fill="#2a1a0e"/>
+  <text x="480" y="150" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">A × B (out of page)</text>
+
+  <!-- panel -->
+  <rect x="500" y="240" width="168" height="120" fill="#FFFFFF" stroke="#D4D4D4" stroke-width="1"/>
+  <text x="516" y="266" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.08em" fill="#545454">ORIENTATION</text>
+  <text x="516" y="292" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#C8102E">B × A = −(A × B)</text>
+  <text x="516" y="312" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">curl the other way, thumb flips</text>
+  <text x="516" y="338" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">φ = 0 → area 0, no twist</text>
+
+  <text x="350" y="396" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">The right-hand rule is a convention for encoding an area as a perpendicular arrow — the area is the real object.</text>
+</svg>

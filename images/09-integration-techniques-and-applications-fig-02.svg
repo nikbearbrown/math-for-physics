@@ -1,0 +1,53 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Hydrostatic force on a dam</title>
+  <desc id="desc">A dam holds water to depth h. Pressure grows linearly with depth as a triangular profile p equals rho g y. Slicing the wetted face into horizontal strips of height d-y gives a strip force d-F equals rho g y times width w times d-y; integrating from the surface to the bottom gives total force one half rho g w h squared, which grows as the square of the depth.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+    <marker id="arrowred" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#C8102E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="420" fill="#FFFFFF"/>
+  <text x="32" y="40" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#2a1a0e">Pressure varies with depth, so force is an accumulation</text>
+  <text x="32" y="58" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">Slice the face into horizontal strips; each contributes dF = ρg y · w dy. Sum them from surface to bottom.</text>
+
+  <!-- water surface line -->
+  <line x1="80" y1="110" x2="420" y2="110" stroke="#545454" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="86" y="104" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">water surface (y = 0)</text>
+
+  <!-- dam wetted face: rectangle x 120..300, y 110..330 -->
+  <rect x="120" y="110" width="180" height="220" fill="#F5EFE8" stroke="#2a1a0e" stroke-width="1.2"/>
+  <text x="210" y="350" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">width w</text>
+  <!-- depth marker h -->
+  <line x1="104" y1="110" x2="104" y2="330" stroke="#2a1a0e" stroke-width="1"/>
+  <polyline points="100,118 104,110 108,118" fill="none" stroke="#2a1a0e" stroke-width="1"/>
+  <polyline points="100,322 104,330 108,322" fill="none" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="92" y="224" text-anchor="end" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">h</text>
+
+  <!-- highlighted strip at depth y ~ 0.6h: y=110+132=242, height 14 -->
+  <rect x="120" y="242" width="180" height="14" fill="#C8102E" opacity="0.8"/>
+  <text x="306" y="252" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#C8102E">strip at depth y, height dy</text>
+
+  <!-- triangular pressure profile to the right: p = rho g y grows with depth -->
+  <!-- baseline at x=320 vertical, triangle pointing right, widest at bottom -->
+  <polygon points="320,110 320,330 470,330" fill="#EFE6DA" stroke="#6B3520" stroke-width="1.2"/>
+  <text x="396" y="350" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#6B3520">p = ρ g y</text>
+  <!-- arrow at the strip's depth showing pressure -->
+  <line x1="320" y1="249" x2="408" y2="249" stroke="#C8102E" stroke-width="2" marker-end="url(#arrowred)"/>
+  <text x="350" y="124" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">pressure grows</text>
+  <text x="350" y="138" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">linearly with depth</text>
+
+  <!-- derivation panel -->
+  <rect x="500" y="130" width="168" height="180" fill="#FFFFFF" stroke="#D4D4D4" stroke-width="1"/>
+  <text x="516" y="156" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.06em" fill="#545454">ACCUMULATE</text>
+  <text x="516" y="186" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">dF = ρ g y · w dy</text>
+  <text x="516" y="212" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">F = ∫₀ʰ ρ g w y dy</text>
+  <line x1="516" y1="226" x2="652" y2="226" stroke="#D4D4D4" stroke-width="1"/>
+  <rect x="516" y="240" width="136" height="0" fill="none"/>
+  <text x="516" y="266" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="14" fill="#C8102E">F = ½ ρ g w h²</text>
+  <text x="516" y="292" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">force ∝ h² (depth squared)</text>
+
+  <text x="350" y="388" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">Double the depth and the wall feels four times the force — both pressure and wetted area grow with depth.</text>
+</svg>

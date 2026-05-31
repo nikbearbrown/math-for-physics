@@ -56,6 +56,9 @@ $$r = |z| = \sqrt{a^2 + b^2} \quad (\text{modulus}), \qquad \theta = \operatorna
 
 In **polar form**, $a = r\cos\theta$ and $b = r\sin\theta$, so $z = r(\cos\theta + i\sin\theta)$.
 
+![The complex number z = 3 + 2i drawn as an arrow in the complex plane, with its rectangular parts a and b, its modulus r, and its argument θ all marked.](images/12-complex-numbers-and-exponentials-fig-01.png)
+*Figure 12.1 — One number, two descriptions: z = 3 + 2i as rectangular parts (a, b) = (3, 2) or as a length r = √13 at angle θ ≈ 33.7°.*
+
 Now watch what multiplication does. Multiply two numbers in polar form, $z_1 = r_1(\cos\theta_1 + i\sin\theta_1)$ and $z_2 = r_2(\cos\theta_2 + i\sin\theta_2)$:
 
 $$z_1 z_2 = r_1 r_2\big[(\cos\theta_1\cos\theta_2 - \sin\theta_1\sin\theta_2) + i(\sin\theta_1\cos\theta_2 + \cos\theta_1\sin\theta_2)\big].$$
@@ -90,6 +93,9 @@ $$\boxed{e^{i\theta} = \cos\theta + i\sin\theta.}$$
 This is **Euler's formula**, and it is now *proved*, not announced. Set $\theta = \pi$ and it gives $e^{i\pi} = -1$, the celebrated identity $e^{i\pi} + 1 = 0$ — but the formula's worth is not its beauty; it is what it does to oscillation.
 
 Two immediate consequences. First, polar form becomes compact: any complex number is $z = re^{i\theta}$. Multiplication is then obvious from the exponent rule, $z_1 z_2 = r_1 r_2 e^{i(\theta_1+\theta_2)}$ — lengths multiply, angles add, exactly as we found. Second, $e^{i\theta}$ traces the **unit circle**: as $\theta$ runs from $0$ to $2\pi$, the point $(\cos\theta, \sin\theta)$ goes once around. A number $e^{i\omega t}$, with $\theta = \omega t$ growing in time, is a point circling the origin at angular rate $\omega$ — a **rotating phasor**.
+
+![On the left, a phasor on the unit circle at angle θ; on the right, the cosine curve traced by the phasor's horizontal projection.](images/12-complex-numbers-and-exponentials-fig-02.png)
+*Figure 12.2 — Euler's formula e^{iθ} = cos θ + i sin θ on the unit circle. The phasor's horizontal shadow (the real part) traces out cos θ — rotation projected into oscillation.*
 
 ### Oscillation as the real part of a phasor
 

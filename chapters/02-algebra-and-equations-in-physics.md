@@ -57,6 +57,9 @@ Now — and this is the whole point of the chapter — we *read* it.
 
 Three independent confirmations — two limits and a units check — and not one of them required a number. That is what "solve symbolically first" buys you: an answer you can interrogate.
 
+![Atwood machine diagram with two masses over a pulley and the boxed symbolic acceleration a = (m₂−m₁)g/(m₁+m₂), read at its limits: equal masses give a=0, a vanishing mass gives a→g, and the acceleration is always less than g.](images/02-algebra-and-equations-in-physics-fig-01.png)
+*Figure 2.1 — The symbolic solution answers questions about the machine — equal masses, a vanishing mass, the ceiling at g — that no single number could.*
+
 ### Proportionality and scaling laws
 
 The simplest nontrivial relation between two quantities is *proportionality*, $y = kx$: double $x$, double $y$. The general power-law form is $y = kx^n$. The reasoning these demand is **multiplicative**, and this is where students most often go wrong. Asked "if 3 items cost \$12, what do 5 cost?", many *add* (\$12 + \$2) instead of *scaling* ($\$12 \times \tfrac{5}{3}$). The additive instinct is the single most documented error in proportional reasoning. The fix is to always ask: *by what factor did the input change, and to what power does the output respond?*
@@ -79,6 +82,9 @@ $$\text{stress} = \frac{\text{weight}}{\text{cross-section}} \propto \frac{L^3}{
 
 Stress grows in direct proportion to size. Double an animal's linear dimensions and its bones must bear twice the stress; they will fail unless they grow disproportionately thick. This is *why* an elephant cannot have a gazelle's slender legs — and the entire argument is three lines of proportional algebra, no calculus, no numbers.
 
+![Square-cube scaling: doubling a cube's side multiplies cross-sectional area by 4 and volume (weight) by 8, so stress = weight/cross-section scales as L³/L² = L, doubling.](images/02-algebra-and-equations-in-physics-fig-02.png)
+*Figure 2.2 — Area scales as L², volume as L³, so stress grows in direct proportion to size — why nature cannot simply scale an animal up.*
+
 ## Worked examples
 
 ### Example 1 — Block on an incline, solved symbolically
@@ -96,6 +102,9 @@ $$a = g(\sin\theta - \mu\cos\theta).$$
 $$\tan\theta > \mu.$$
 
 The block slips once the slope's tangent exceeds the friction coefficient. That clean criterion is invisible in any numerical answer; it is *given* by the symbolic one.
+
+![Block on an incline at angle θ with the driving component mg sinθ and resisting friction μmg cosθ; an inset shows the slip threshold tanθ > μ and the critical angle θ_c = arctan μ.](images/02-algebra-and-equations-in-physics-fig-03.png)
+*Figure 2.3 — Dividing out the mass leaves a = g(sinθ − μcosθ); the block slips precisely when tanθ exceeds μ.*
 
 ### Example 2 — The additive bug, caught
 

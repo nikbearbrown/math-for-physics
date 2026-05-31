@@ -1,0 +1,62 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Riemann rectangles converging to the area</title>
+  <desc id="desc">A velocity curve over an interval shown twice: with a coarse partition of wide rectangles (visible gaps to the curve) and with a fine partition of thin rectangles (gaps nearly gone). Each rectangle is a sliver v of t-k times delta-t, and the sum of slivers approaches the integral of v dt, the displacement.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="420" fill="#FFFFFF"/>
+  <text x="32" y="40" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#2a1a0e">The integral is the limit of a sum of thin slivers</text>
+  <text x="32" y="58" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">Each rectangle is one sliver of distance, v(tₖ)Δt. As the slices thin, the staircase hugs the curve and the sum becomes exact.</text>
+
+  <!-- LEFT panel: coarse -->
+  <text x="40" y="92" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.08em" fill="#545454">COARSE PARTITION</text>
+  <!-- axes origin (60,330), width to 320 -->
+  <line x1="60" y1="330" x2="320" y2="330" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="60" y1="340" x2="60" y2="110" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="326" y="334" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">t</text>
+  <text x="54" y="116" text-anchor="end" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">v(t)</text>
+  <!-- coarse rectangles (right-endpoint heights) width 50, x from 60..310. curve v=increasing -->
+  <!-- heights at right endpoints: x=110->y=300, x=160->272, x=210->236, x=260->192, x=310->140 -->
+  <rect x="60" y="300" width="50" height="30" fill="#F5EFE8" stroke="#6B3520" stroke-width="1"/>
+  <rect x="110" y="272" width="50" height="58" fill="#F5EFE8" stroke="#6B3520" stroke-width="1"/>
+  <rect x="160" y="236" width="50" height="94" fill="#F5EFE8" stroke="#6B3520" stroke-width="1"/>
+  <rect x="210" y="192" width="50" height="138" fill="#F5EFE8" stroke="#6B3520" stroke-width="1"/>
+  <rect x="260" y="140" width="50" height="190" fill="#F5EFE8" stroke="#6B3520" stroke-width="1"/>
+  <!-- curve -->
+  <path d="M 60 318 Q 200 300 310 140" fill="none" stroke="#C8102E" stroke-width="2"/>
+  <!-- highlight one sliver -->
+  <rect x="160" y="236" width="50" height="94" fill="none" stroke="#C8102E" stroke-width="2"/>
+  <text x="185" y="290" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="9" fill="#C8102E">v(tₖ)Δt</text>
+
+  <!-- RIGHT panel: fine -->
+  <text x="400" y="92" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.08em" fill="#545454">FINE PARTITION</text>
+  <line x1="400" y1="330" x2="660" y2="330" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="400" y1="340" x2="400" y2="110" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="666" y="334" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">t</text>
+  <text x="394" y="116" text-anchor="end" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">v(t)</text>
+  <!-- many thin rectangles width ~16.7 over 400..650 (15 bars). Approximate heights following same curve shape -->
+  <g fill="#F5EFE8" stroke="#6B3520" stroke-width="0.5">
+    <rect x="400" y="318" width="16.7" height="12"/>
+    <rect x="416.7" y="314" width="16.7" height="16"/>
+    <rect x="433.4" y="309" width="16.7" height="21"/>
+    <rect x="450.1" y="303" width="16.7" height="27"/>
+    <rect x="466.8" y="296" width="16.7" height="34"/>
+    <rect x="483.5" y="288" width="16.7" height="42"/>
+    <rect x="500.2" y="278" width="16.7" height="52"/>
+    <rect x="516.9" y="266" width="16.7" height="64"/>
+    <rect x="533.6" y="252" width="16.7" height="78"/>
+    <rect x="550.3" y="236" width="16.7" height="94"/>
+    <rect x="567" y="216" width="16.7" height="114"/>
+    <rect x="583.7" y="194" width="16.7" height="136"/>
+    <rect x="600.4" y="170" width="16.7" height="160"/>
+    <rect x="617.1" y="144" width="16.7" height="186"/>
+    <rect x="633.8" y="140" width="16.7" height="190"/>
+  </g>
+  <path d="M 400 318 Q 540 300 650 140" fill="none" stroke="#C8102E" stroke-width="2"/>
+
+  <!-- limit statement center -->
+  <text x="350" y="372" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">Σ v(tₖ) Δt   →   ∫₀ᵀ v(t) dt   =   area under the curve   =   displacement</text>
+  <text x="350" y="396" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">The elongated S is Leibniz's "summa"; dx is the surviving ghost of the slice width Δt.</text>
+</svg>

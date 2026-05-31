@@ -45,6 +45,9 @@ $$\left[\tfrac{1}{2}at\right] = LT^{-2} \cdot T = LT^{-1}.$$
 
 That is a speed, not a length. The equation is *impossible*, and we knew it without solving anything. This is the practical payoff: **a dimensionally inconsistent equation is certainly wrong; a consistent one is merely allowed.** Consistency is a necessary, not a sufficient, condition for truth.
 
+![Side-by-side dimension check of two candidate kinematic equations: s = ½at² is consistent (both sides L) while s = ½at is impossible (right side is a speed, LT⁻¹).](images/01-units-dimensions-and-estimation-fig-01.png)
+*Figure 1.1 — A dimensionally inconsistent equation is certainly wrong; consistency is necessary, not sufficient.*
+
 ### From checking to deriving: the count of dimensionless groups
 
 Dimensional analysis does something stronger than catch errors — it can hand you the *form* of an answer before you do any physics. The precise statement is the **Buckingham $\Pi$-theorem** (Buckingham, 1914; the result predates him — more on that below): *any physically meaningful relation among $n$ dimensioned variables, built from $k$ independent base dimensions, can be rewritten as a relation among exactly $n - k$ dimensionless products.* [verify — Buckingham 1914]
@@ -68,6 +71,9 @@ Match the exponent of each base dimension on both sides:
 So
 
 $$T_p = C\,\ell^{1/2}\, g^{-1/2} = C\sqrt{\frac{\ell}{g}}.$$
+
+![Exponent-matching derivation of the pendulum period: assuming Tp = C·ℓᵃgᵇmᶜ and matching the L, M, T exponents gives c=0, b=−½, a=½, so Tp = C√(ℓ/g).](images/01-units-dimensions-and-estimation-fig-02.png)
+*Figure 1.2 — Matching the exponent of each base dimension fixes the form of the pendulum period; only the pure number C is left to the physics.*
 
 We have derived that the period grows as the square root of the length and shrinks as the square root of $g$, and that it is independent of mass — without writing a single equation of motion. The one thing dimensions cannot give us is the pure number $C$; the full theory (Chapter 11) will show $C = 2\pi$. Notice what was *not* mechanical: deciding that $\ell$, $g$, and $m$ were the relevant variables. That choice is physical judgment. The theorem tells you how many groups exist *once you have chosen the variables*; choosing them well is the irreducibly human part.
 
@@ -121,7 +127,10 @@ You measure a sphere's diameter as $d = 5.2 \pm 0.1$ cm and want its volume, $V 
 
 $$\frac{\delta d}{d} = \frac{0.1}{5.2} = 1.9\%, \qquad \frac{\delta V}{V} = 3 \times 1.9\% = 5.8\%.$$
 
-The central value is $V = \tfrac{\pi}{6}(5.2)^3 = 73.6\ \text{cm}^3$, so $\delta V = 0.058 \times 73.6 = 4.3\ \text{cm}^3$, and you report $V = 73.6 \pm 4.3\ \text{cm}^3$. The lesson is the factor of 3: a cube *amplifies* the imprecision of its input threefold. If the volume came instead from independently measured length, width, and height, you would combine three relative uncertainties — in quadrature if they were independent.
+The central value is $V = \tfrac{\pi}{6}(5.2)^3 = 73.6\ \text{cm}^3$, so $\delta V = 0.058 \times 73.6 = 4.3\ \text{cm}^3$, and you report $V = 73.6 \pm 4.3\ \text{cm}^3$. The lesson is the factor of 3: a cube *amplifies* the imprecision of its input threefold.
+
+![Bar chart comparing a 1.9% relative uncertainty in a measured diameter to the resulting 5.8% relative uncertainty in the volume, which depends on the cube of the diameter — a factor-of-3 amplification.](images/01-units-dimensions-and-estimation-fig-03.png)
+*Figure 1.3 — A power of 3 multiplies the relative uncertainty by 3: the exponent, not the arithmetic, sets the imprecision.* If the volume came instead from independently measured length, width, and height, you would combine three relative uncertainties — in quadrature if they were independent.
 
 ### Example 3 — A Fermi estimate
 

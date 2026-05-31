@@ -1,0 +1,59 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">The Atwood machine: reading the symbol at its limits</title>
+  <desc id="desc">Two masses over a pulley; the symbolic acceleration a equals (m2 minus m1) times g over (m1 plus m2). Reading it: equal masses give zero acceleration, a vanishing mass gives free fall g, and the acceleration is always less than g.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="420" fill="#FFFFFF"/>
+  <text x="32" y="40" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#2a1a0e">Solve for the symbol, then read it</text>
+  <text x="32" y="58" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">The symbolic acceleration answers questions about the machine that no single number could.</text>
+
+  <!-- pulley and blocks -->
+  <circle cx="150" cy="120" r="22" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1.5"/>
+  <circle cx="150" cy="120" r="3" fill="#2a1a0e"/>
+  <!-- rope -->
+  <line x1="128" y1="120" x2="128" y2="250" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="172" y1="120" x2="172" y2="200" stroke="#2a1a0e" stroke-width="1"/>
+  <line x1="128" y1="98" x2="172" y2="98" stroke="#2a1a0e" stroke-width="1"/>
+  <!-- block m1 (rising, lighter) -->
+  <rect x="106" y="250" width="44" height="40" fill="#6B3520"/>
+  <text x="128" y="275" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#FFFFFF">m₁</text>
+  <line x1="128" y1="240" x2="128" y2="218" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="92" y="232" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">rises</text>
+  <!-- block m2 (falling, heavier) -->
+  <rect x="146" y="200" width="52" height="48" fill="#C8102E"/>
+  <text x="172" y="229" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#FFFFFF">m₂</text>
+  <line x1="172" y1="258" x2="172" y2="280" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="208" y="274" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">falls</text>
+
+  <!-- equations -->
+  <text x="40" y="330" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">m₂g − T = m₂a</text>
+  <text x="40" y="350" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">T − m₁g = m₁a</text>
+  <text x="40" y="378" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">add to eliminate T</text>
+
+  <!-- boxed result -->
+  <rect x="290" y="100" width="250" height="56" fill="#FFFFFF" stroke="#C8102E" stroke-width="1.5"/>
+  <text x="415" y="135" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="16" fill="#2a1a0e">a = (m₂ − m₁) g / (m₁ + m₂)</text>
+
+  <!-- limit reads -->
+  <rect x="290" y="180" width="378" height="180" fill="#F5EFE8" stroke="#D4D4D4" stroke-width="1"/>
+  <text x="306" y="206" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.08em" fill="#545454">READ THE SYMBOL</text>
+
+  <text x="306" y="234" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">m₁ = m₂</text>
+  <line x1="420" y1="230" x2="452" y2="230" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="464" y="234" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">a = 0   equal masses balance</text>
+
+  <text x="306" y="272" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">m₁ → 0</text>
+  <line x1="420" y1="268" x2="452" y2="268" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="464" y="272" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">a → g   m₂ free-falls</text>
+
+  <text x="306" y="310" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">always</text>
+  <line x1="420" y1="306" x2="452" y2="306" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="464" y="310" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#C8102E">a &lt; g   gentler than free fall</text>
+
+  <text x="306" y="344" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">because (m₂ − m₁) &lt; (m₁ + m₂) for all masses</text>
+
+  <text x="350" y="396" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">A number gives one answer; the symbol answers every question about the machine, for any masses, forever.</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">The Fundamental Theorem links slope and area</title>
+  <desc id="desc">Left: the function f with the swept area A of x shaded to a moving right edge x, growing by a thin strip f of x times d-x. Right: the accumulation function A of x rising, whose slope at x equals f of x. The theorem says the derivative of the accumulation is the original function, and the definite integral equals F of b minus F of a.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="420" fill="#FFFFFF"/>
+  <text x="32" y="40" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#2a1a0e">The two questions are one: slope and area are inverse</text>
+  <text x="32" y="58" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">The accumulation A(x) = ∫ₐˣ f grows by a strip f(x)dx as x advances, so dA/dx = f(x).</text>
+
+  <!-- LEFT panel: f(x) with swept area -->
+  <text x="40" y="92" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.08em" fill="#545454">AREA UNDER f</text>
+  <line x1="60" y1="320" x2="320" y2="320" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="60" y1="330" x2="60" y2="110" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="326" y="324" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">x</text>
+  <text x="54" y="116" text-anchor="end" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">f(x)</text>
+  <!-- f curve gently rising -->
+  <path d="M 60 250 Q 190 220 310 150" fill="none" stroke="#C8102E" stroke-width="2"/>
+  <!-- shaded area from a=60 to x=230 -->
+  <path d="M 60 320 L 60 250 Q 160 226 230 196 L 230 320 Z" fill="#F5EFE8" stroke="none"/>
+  <text x="140" y="295" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#6B3520">A(x)</text>
+  <!-- growth strip at x=230, width 16 -->
+  <rect x="230" y="196" width="16" height="124" fill="#C8102E" opacity="0.85"/>
+  <text x="238" y="160" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#C8102E">f(x)·dx</text>
+  <line x1="60" y1="320" x2="60" y2="320" stroke="none"/>
+  <text x="60" y="336" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">a</text>
+  <text x="238" y="336" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">x</text>
+
+  <!-- RIGHT panel: A(x) curve, slope = f -->
+  <text x="400" y="92" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.08em" fill="#545454">ACCUMULATION A(x)</text>
+  <line x1="400" y1="320" x2="660" y2="320" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="400" y1="330" x2="400" y2="110" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="666" y="324" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">x</text>
+  <text x="394" y="116" text-anchor="end" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">A(x)</text>
+  <!-- A(x) rising and steepening -->
+  <path d="M 400 318 Q 530 300 640 130" fill="none" stroke="#C8102E" stroke-width="2"/>
+  <!-- point at x corresponding to left x=230 -> here x'=570 -->
+  <circle cx="570" cy="232" r="4" fill="#2a1a0e"/>
+  <!-- tangent showing slope = f(x) -->
+  <line x1="510" y1="270" x2="630" y2="170" stroke="#2a1a0e" stroke-width="1.5"/>
+  <text x="588" y="192" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">slope = f(x)</text>
+  <text x="578" y="248" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">dA/dx = f(x)</text>
+
+  <!-- FTC2 box -->
+  <rect x="200" y="350" width="300" height="48" fill="#FFFFFF" stroke="#C8102E" stroke-width="1.5"/>
+  <text x="350" y="380" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="15" fill="#2a1a0e">∫ₐᵇ f(x) dx = F(b) − F(a)</text>
+</svg>

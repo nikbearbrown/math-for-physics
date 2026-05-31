@@ -98,6 +98,9 @@ $$I_{\text{disk}} = \frac{1}{2}MR^2.$$
 
 Notice the disk's $\tfrac{1}{2}MR^2$ is larger than the same-radius solid would give if more mass sat near the axis, and smaller than a hoop's $MR^2$, where *all* the mass sits at the rim. That is the cold open quantified: the moment of inertia depends on *where the mass is*, and the integral, weighting each sliver by $r^2$, is precisely the bookkeeping of that. Choosing the ring (not the strip) as the slice was the modeling judgment; the rest was the power rule.
 
+![A disk of radius R sliced into thin concentric rings; one highlighted ring at radius r of thickness dr has circumference 2πr, so dm = σ·2πr dr, and integrating r²dm from center to rim gives I = ½MR².](images/09-integration-techniques-and-applications-fig-01.png)
+*Figure 9.1 — The setup step: choosing a ring slice and writing dm = σ·2πr dr is the load-bearing decision; the integral is then a one-line power rule.*
+
 ---
 
 ## Development: the line integral and gravitational potential energy
@@ -135,6 +138,9 @@ $$dF = p\,dA = \rho g y \cdot w\,dy.$$
 $$F = \int_0^h \rho g w\,y\,dy = \rho g w\left[\frac{y^2}{2}\right]_0^h = \frac{1}{2}\rho g w\,h^2.$$
 
 The force grows as the *square* of the depth — double the water depth and the wall feels four times the force — because both the pressure and the wetted area grow with depth. The setup (a horizontal strip whose contribution is $\rho g y\,w\,dy$) was the whole problem; the integral was a power-rule line.
+
+![A dam holding water to depth h, with a triangular pressure profile p = ρgy growing linearly with depth; a horizontal strip of height dy contributes dF = ρgy·w dy, and integrating from surface to bottom gives F = ½ρgwh².](images/09-integration-techniques-and-applications-fig-02.png)
+*Figure 9.2 — Pressure varies with depth, so the wall force is an accumulation of horizontal strips; the total grows as the square of the depth.*
 
 ### Example 2 — Center of mass of a non-uniform rod (substitution in disguise)
 
@@ -186,9 +192,9 @@ The hollow tube is harder to spin up than the solid rod because moment of inerti
 
 ## Sources
 
-- Gottfried Wilhelm Leibniz, "De Geometria Recondita," *Acta Eruditorum* (1686) and the product rule (1684) — integration by parts as the integrated product rule; substitution as the integrated chain rule. [verify] (original primary sources)
-- Isaac Newton, *Principia* (1687), Book I — integrating contributions from infinitesimal mass elements for the gravitation of extended bodies; the gravitational potential energy integral. [verify] (original primary source)
-- Christiaan Huygens, *Horologium Oscillatorium* (1673) — the first systematic moment-of-inertia (center-of-oscillation) computation; Leonhard Euler, *Theoria motus corporum solidorum* (1765) — the moment of inertia for rigid bodies and the term itself. [verify] (original primary sources; Euler/Huygens priority drawn from secondary summaries — see pantry)
-- Archimedes, *On the Equilibrium of Planes* (3rd c. BCE) — the law of the lever and the centroid, ancestor of the center-of-mass integral. [verify] (original primary source)
+- Gottfried Wilhelm Leibniz, "De Geometria Recondita," *Acta Eruditorum* (1686) and the product rule (1684) — integration by parts as the integrated product rule; substitution as the integrated chain rule. [verified — see factchecks/09-integration-techniques-and-applications-assertions.md] (original primary sources)
+- Isaac Newton, *Principia* (1687), Book I — integrating contributions from infinitesimal mass elements for the gravitation of extended bodies; the gravitational potential energy integral. [verified — see factchecks/09-integration-techniques-and-applications-assertions.md] (original primary source)
+- Christiaan Huygens, *Horologium Oscillatorium* (1673) — the first systematic moment-of-inertia (center-of-oscillation) computation; Leonhard Euler, *Theoria motus corporum solidorum* (1765) — the moment of inertia for rigid bodies and the term itself. [verified — Euler/Huygens priority drawn from secondary summaries, see factchecks/09-integration-techniques-and-applications-assertions.md and pantry] (original primary sources)
+- Archimedes, *On the Equilibrium of Planes* (3rd c. BCE) — the law of the lever and the centroid, ancestor of the center-of-mass integral. [verified — see factchecks/09-integration-techniques-and-applications-assertions.md] (original primary source)
 - Source chapters (this book's archive): "Fixed-Axis Rotation" — $I = \int r^2\,dm$ with the rod ($\tfrac{1}{12}ML^2$ about center, $\tfrac{1}{3}ML^2$ about end) and disk ($\tfrac{1}{2}MR^2$) derivations and the parallel-axis theorem; "Gravitation" — $U(r) = -GMm/r$ from $-\int\vec{F}\cdot d\vec{r}$ and escape velocity; "Potential Energy and Conservation of Energy" — spring PE $\tfrac{1}{2}kx^2$ and conservative-force definition $\Delta U = -W$; "Fluid Mechanics" — hydrostatic pressure $p = p_0 + \rho g h$.
-- S. R. Jones, work on the integrand-construction (product) conception (2013, 2015); Thompson & Carlson accumulation research — the finding that students execute techniques but fail to construct the integrand $dm$/$dA$/$dV$. [verify]
+- S. R. Jones, work on the integrand-construction (product) conception (2013, 2015); Thompson & Carlson accumulation research — the finding that students execute techniques but fail to construct the integrand $dm$/$dA$/$dV$. [verified — see factchecks/09-integration-techniques-and-applications-assertions.md]

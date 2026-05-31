@@ -1,0 +1,49 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Galileo's square-cube law</title>
+  <desc id="desc">Doubling an animal's linear size multiplies cross-sectional area by four and volume (weight) by eight, so the stress on its bones (weight over cross-section) doubles. Stress grows in direct proportion to size.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="420" fill="#FFFFFF"/>
+  <text x="32" y="40" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#2a1a0e">Why nature cannot simply scale an animal up</text>
+  <text x="32" y="58" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">Area scales as L², volume as L³, so stress = weight ÷ cross-section scales as L³/L² = L.</text>
+
+  <!-- small cube -->
+  <g>
+    <polygon points="120,250 180,250 180,310 120,310" fill="#F5EFE8" stroke="#2a1a0e" stroke-width="1.2"/>
+    <polygon points="120,250 140,232 200,232 180,250" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1.2"/>
+    <polygon points="180,250 200,232 200,292 180,310" fill="#EFE6DA" stroke="#2a1a0e" stroke-width="1.2"/>
+    <text x="160" y="338" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">side L</text>
+  </g>
+
+  <line x1="222" y1="270" x2="270" y2="270" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="246" y="262" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">×2</text>
+
+  <!-- big cube (double) -->
+  <g>
+    <polygon points="295,200 415,200 415,320 295,320" fill="#F5EFE8" stroke="#2a1a0e" stroke-width="1.2"/>
+    <polygon points="295,200 335,164 455,164 415,200" fill="#FFFFFF" stroke="#2a1a0e" stroke-width="1.2"/>
+    <polygon points="415,200 455,164 455,284 415,320" fill="#EFE6DA" stroke="#2a1a0e" stroke-width="1.2"/>
+    <text x="375" y="346" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">side 2L</text>
+  </g>
+
+  <!-- proportionality ladder -->
+  <rect x="500" y="160" width="168" height="170" fill="#FFFFFF" stroke="#D4D4D4" stroke-width="1"/>
+  <text x="516" y="186" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.08em" fill="#545454">SCALING LADDER</text>
+
+  <text x="516" y="216" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">area ∝ L²</text>
+  <text x="630" y="216" text-anchor="end" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#6B3520">× 4</text>
+
+  <text x="516" y="248" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">volume ∝ L³</text>
+  <text x="630" y="248" text-anchor="end" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#6B3520">× 8</text>
+  <text x="516" y="264" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">(= weight)</text>
+
+  <line x1="516" y1="278" x2="652" y2="278" stroke="#D4D4D4" stroke-width="1"/>
+
+  <text x="516" y="302" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">stress ∝ L³/L² = L</text>
+  <text x="630" y="322" text-anchor="end" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" font-weight="bold" fill="#C8102E">× 2</text>
+
+  <text x="350" y="384" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">Double the size, double the bone stress — three lines of proportional algebra, no calculus, no numbers.</text>
+</svg>

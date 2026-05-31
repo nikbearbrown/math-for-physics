@@ -60,6 +60,9 @@ Read what the math says. The horizontal velocity $v_x$ is a *constant* — it co
 
 So at the apex, where $v_y = 0$ (set $v_0\sin\theta_0 - g t = 0$), the horizontal velocity is *still* $v_0\cos\theta_0 \neq 0$. The ball is moving purely horizontally, not at rest. The "velocity is zero at the top" error is the failure to see the two components as independent; differentiating componentwise *proves* they are. A ball dropped from a moving train and a ball thrown from it hit the floor at the same time, for the same reason: the vertical motion does not consult the horizontal.
 
+![A parabolic projectile trajectory with velocity arrows at launch, apex, and descent, each resolved into a constant horizontal component vₓ and a varying vertical component v_y; at the apex the velocity arrow is purely horizontal.](images/07-differentiation-in-motion-fig-01.png)
+*Figure 7.1 — Componentwise differentiation makes the independence of horizontal and vertical motion a theorem: at the apex v_y = 0 but vₓ ≠ 0.*
+
 ---
 
 ## Development: centripetal acceleration by differentiating a rotating vector
@@ -94,7 +97,10 @@ and since $v = r\omega$ gives $\omega = v/r$,
 
 $$\boxed{\,a_c = \frac{v^2}{r}\,.}$$
 
-There it is. The famous $v^2/r$ is not a formula to memorize — it falls out of differentiating a rotating unit vector twice. The acceleration is nonzero even though the speed is constant, because acceleration is the derivative of the *velocity vector*, and that vector is turning. The pilot in the 8-g turn is being accelerated toward the center of the circle at $8g$; the speed never changes, but the direction does, and the derivative sees the direction.
+There it is. The famous $v^2/r$ is not a formula to memorize — it falls out of differentiating a rotating unit vector twice. The acceleration is nonzero even though the speed is constant, because acceleration is the derivative of the *velocity vector*, and that vector is turning.
+
+![A circle with the position vector r to the particle, the velocity v tangent and perpendicular to r with constant magnitude rω, and the acceleration a = −ω²r pointing back to the center; a panel shows the two differentiations giving the boxed a_c = v²/r.](images/07-differentiation-in-motion-fig-02.png)
+*Figure 7.2 — Differentiating a rotating vector twice yields acceleration pointing at the center: a_c = v²/r, nonzero even at constant speed.* The pilot in the 8-g turn is being accelerated toward the center of the circle at $8g$; the speed never changes, but the direction does, and the derivative sees the direction.
 
 A caution the source chapter flags: this center-seeking $a_c = r\omega^2$ is a different quantity from the *angular* acceleration $\alpha = d\omega/dt$. Here $\omega$ is constant, so $\alpha = 0$ — yet $a_c \neq 0$. Do not confuse the acceleration that turns you (centripetal, present even at steady spin) with the one that speeds the spin up (angular, present only when $\omega$ changes).
 
@@ -172,9 +178,9 @@ Both puzzles dissolve. At the apex of the thrown ball, we differentiated the par
 
 ## Sources
 
-- Isaac Newton, *Philosophiæ Naturalis Principia Mathematica* (1687), Book I — the geometric analysis of circular and centripetal motion; the coinage "centripetal." [verify] (original primary source)
-- Christiaan Huygens, *De vi centrifuga* (written 1659, pub. 1703) and *Horologium Oscillatorium* (1673) — the $v^2/r$ result for circular motion by a geometric limiting argument. [verify] (original primary sources; the Huygens/Newton priority is debated — see pantry)
-- J. W. Gibbs & E. B. Wilson, *Vector Analysis* (1901) — the $\hat{i}, \hat{j}, \hat{k}$ notation and componentwise differentiation of vector functions. [verify] (original primary source)
-- Leonhard Euler, *Mechanica* (1736) — recasting mechanics in analytic/component form. [verify] (original primary source)
+- Isaac Newton, *Philosophiæ Naturalis Principia Mathematica* (1687), Book I — the geometric analysis of circular and centripetal motion; the coinage "centripetal." [verified — see factchecks/07-differentiation-in-motion-assertions.md] (original primary source)
+- Christiaan Huygens, *De vi centrifuga* (written 1659, pub. 1703) and *Horologium Oscillatorium* (1673) — the $v^2/r$ result for circular motion by a geometric limiting argument. [verified — Huygens dates/works confirmed; the Huygens/Newton priority is debated, see factchecks/07-differentiation-in-motion-assertions.md and pantry] (original primary sources)
+- J. W. Gibbs & E. B. Wilson, *Vector Analysis* (1901) — the $\hat{i}, \hat{j}, \hat{k}$ notation and componentwise differentiation of vector functions. [verified — Gibbs/Wilson standardized/popularized the notation (î,ĵ,k̂ originate with Hamilton); see factchecks/07-differentiation-in-motion-assertions.md] (original primary source)
+- Leonhard Euler, *Mechanica* (1736) — recasting mechanics in analytic/component form. [verified — see factchecks/07-differentiation-in-motion-assertions.md] (original primary source)
 - Source chapter (this book's archive): "Motion in Two and Three Dimensions" — the projectile parametrization, the jet barrel-roll numbers, the rotating-vector derivation of $a_c$, and the relative-motion/closing-speed problems; "Fixed-Axis Rotation" — the distinction between centripetal and angular acceleration.
-- The independence-of-perpendicular-components misconception is documented in physics-education research (Halloun & Hestenes lineage). [verify]
+- The independence-of-perpendicular-components misconception is documented in physics-education research (Halloun & Hestenes lineage). [verified — see factchecks/07-differentiation-in-motion-assertions.md]

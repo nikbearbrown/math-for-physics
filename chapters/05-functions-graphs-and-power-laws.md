@@ -68,6 +68,9 @@ Now the variable is in the *exponent*, not the base — the opposite of a power 
 
 **Power versus exponential — get this straight.** In $x^2$ the variable is the *base*; in $2^x$ the variable is the *exponent*. They could not be more different: $x^2$ grows briskly, $2^x$ eventually outruns *any* power. The tool that tells them apart cleanly is the logarithm.
 
+![Four mini-plots: a linear function (straight line, constant rate), a quadratic parabola (constant acceleration), a power law (scaling), and an exponential (constant fractional change), each labeled with its physical fingerprint.](images/05-functions-graphs-and-power-laws-fig-01.png)
+*Figure 5.1 — Four elementary shapes and their physical fingerprints: the shape of the curve is the physics.*
+
 ---
 
 ## Development: logarithms and the straightening of curves
@@ -128,6 +131,9 @@ $$b = \frac{4.690 - 0.690}{2.000 - 0.000} = \frac{4.00}{2.00} = 2.$$
 
 The log–log slope is exactly 2 — Galileo's time-squared law, read off a straight line. Notice that the intercept $\log a = 0.690 = \log_{10}(4.9)$ recovers the constant $a = 4.9$, which encodes $g/2$. The slope carries the *scaling*; the intercept carries the *scale*.
 
+![Free-fall data d = 4.9t² at t = 1, 10, 100 s plotted as log d against log t falls on a straight line; the rise of 4 decades over a run of 2 decades gives slope b = 2.](images/05-functions-graphs-and-power-laws-fig-02.png)
+*Figure 5.2 — A power law straightens on log–log axes; its slope is the exponent. "What is the exponent?" becomes "what is the slope?"*
+
 ### Example 2 — Stopping distance versus speed
 
 When a car brakes with constant deceleration $a$, the kinematic relation $v^2 = v_0^2 - 2a\,d$ (derived in the source chapter on straight-line motion) gives, at the stopping point $v = 0$,
@@ -176,10 +182,10 @@ The power law is one of the most transferable objects in all of quantitative sci
 
 ## Sources
 
-- Galileo Galilei, *Discorsi e dimostrazioni matematiche intorno a due nuove scienze* (*Two New Sciences*), 1638 — the time-squared law of free fall and the square–cube scaling argument. [verify] (original primary source)
-- René Descartes, *La Géométrie*, 1637 — the coordinate graph pairing algebra with geometry. [verify] (original primary source)
-- Julian S. Huxley, *Problems of Relative Growth*, 1932; J. S. Huxley & G. Teissier, "Terminology of relative growth," *Nature* 137 (1936): 780–781 — allometry and the convention that a power law $y = ax^b$ is a straight log–log line of slope $b$. [verify] (original primary sources)
-- Max Kleiber, "Body size and metabolism," *Hilgardia* 6 (1932): 315–353 — the empirical metabolic-rate-versus-mass scaling. [verify] (original primary source)
+- Galileo Galilei, *Discorsi e dimostrazioni matematiche intorno a due nuove scienze* (*Two New Sciences*), 1638 — the time-squared law of free fall and the square–cube scaling argument. [verified — see factchecks/05-functions-graphs-and-power-laws-assertions.md] (original primary source)
+- René Descartes, *La Géométrie*, 1637 — the coordinate graph pairing algebra with geometry. [verified — see factchecks/05-functions-graphs-and-power-laws-assertions.md] (original primary source)
+- Julian S. Huxley, *Problems of Relative Growth*, 1932; J. S. Huxley & G. Teissier, "Terminology of relative growth," *Nature* 137 (1936): 780–781 — allometry and the convention that a power law $y = ax^b$ is a straight log–log line of slope $b$. [verified — see factchecks/05-functions-graphs-and-power-laws-assertions.md] (original primary sources)
+- Max Kleiber, "Body size and metabolism," *Hilgardia* 6 (1932): 315–353 — the empirical metabolic-rate-versus-mass scaling. [verified — see factchecks/05-functions-graphs-and-power-laws-assertions.md] (original primary source)
 - G. B. West, J. H. Brown, B. J. Enquist, "A general model for the origin of allometric scaling laws in biology," *Science* 276 (1997): 122–126 — the disputed $3/4$-exponent mechanism. [contested — see pantry]
 - Source chapter (this book's archive): "Motion Along a Straight Line" — Baumgartner free-fall data and the stopping-distance relation $v^2 = v_0^2 - 2a\,d$.
-- A. Sfard, "On the dual nature of mathematical conceptions," *Educational Studies in Mathematics* 22 (1991): 1–36; M. Carlson et al., "Applying covariational reasoning while modeling dynamic events," *Journal for Research in Mathematics Education* 33 (2002): 352–378 — the process-vs-object view of functions and covariational reasoning. [verify]
+- A. Sfard, "On the dual nature of mathematical conceptions," *Educational Studies in Mathematics* 22 (1991): 1–36; M. Carlson et al., "Applying covariational reasoning while modeling dynamic events," *Journal for Research in Mathematics Education* 33 (2002): 352–378 — the process-vs-object view of functions and covariational reasoning. [verified — see factchecks/05-functions-graphs-and-power-laws-assertions.md]

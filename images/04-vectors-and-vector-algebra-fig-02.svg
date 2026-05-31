@@ -1,0 +1,48 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">The dot product as projection</title>
+  <desc id="desc">Two vectors A and B from a common origin with angle phi between them. Dropping a perpendicular from the tip of A onto the line of B marks the projection, of length the magnitude of A times cosine phi. The dot product equals the magnitude of B times this projection.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+    <marker id="arrowred" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#C8102E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="420" fill="#FFFFFF"/>
+  <text x="32" y="40" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#2a1a0e">The dot product is a shadow: how much of A lies along B</text>
+  <text x="32" y="58" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">A·B = |A||B|cos φ. The projection |A|cos φ is the length of A's shadow cast onto the direction of B.</text>
+
+  <!-- origin at (110,300) -->
+  <!-- B along nearly horizontal, length 380 -> tip (490,300) -->
+  <line x1="110" y1="300" x2="490" y2="300" stroke="#2a1a0e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="496" y="304" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" fill="#2a1a0e">B</text>
+
+  <!-- A at angle phi=38deg, length 300 -> tip (110+236.4, 300-184.7)=(346,115) -->
+  <line x1="110" y1="300" x2="346" y2="115" stroke="#C8102E" stroke-width="2" marker-end="url(#arrowred)"/>
+  <text x="352" y="110" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" fill="#C8102E">A</text>
+
+  <!-- perpendicular from tip of A (346,115) down to B line (346,300) -->
+  <line x1="346" y1="115" x2="346" y2="300" stroke="#545454" stroke-width="1" stroke-dasharray="5 3"/>
+  <polyline points="334,300 334,288 346,288" fill="none" stroke="#545454" stroke-width="1"/>
+
+  <!-- projection segment along B (thick brown) from origin to (346,300) -->
+  <line x1="110" y1="306" x2="346" y2="306" stroke="#6B3520" stroke-width="3"/>
+  <text x="228" y="328" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#6B3520">projection = |A| cos φ</text>
+
+  <!-- angle phi arc -->
+  <path d="M 170 300 A 60 60 0 0 0 157 263" fill="none" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="176" y="284" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">φ</text>
+
+  <!-- panel -->
+  <rect x="500" y="130" width="168" height="180" fill="#F5EFE8" stroke="#D4D4D4" stroke-width="1"/>
+  <text x="516" y="156" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.08em" fill="#545454">READ THE SIGN</text>
+  <text x="516" y="186" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">φ = 0  → A·B max</text>
+  <text x="516" y="212" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">φ = 90° → A·B = 0</text>
+  <text x="516" y="230" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">(perpendicular)</text>
+  <text x="516" y="256" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">φ &gt; 90° → A·B &lt; 0</text>
+  <line x1="516" y1="272" x2="652" y2="272" stroke="#D4D4D4" stroke-width="1"/>
+  <text x="516" y="296" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#C8102E">cos φ = A·B / |A||B|</text>
+
+  <text x="350" y="384" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">Work is a dot product: only the part of the force along the motion counts. A perpendicular force does no work.</text>
+</svg>

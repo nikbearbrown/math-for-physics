@@ -1,0 +1,58 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">The small-angle approximation sine theta approximately theta</title>
+  <desc id="desc">On a zoomed unit circle, for a small angle the arc length theta and the vertical drop sine theta nearly coincide. The plot of y equals theta (a straight line) and y equals sine theta (a curve) hug each other near the origin and only diverge noticeably past about half a radian.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="420" fill="#FFFFFF"/>
+  <text x="32" y="40" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#2a1a0e">For small angles, the sine is the angle</text>
+  <text x="32" y="58" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">As θ shrinks, the arc (length θ), the chord, and sin θ converge — the hinge of all oscillation theory.</text>
+
+  <!-- LEFT panel: zoomed circle wedge -->
+  <text x="40" y="92" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.08em" fill="#545454">CLOSE-UP OF A SMALL WEDGE</text>
+  <!-- center at (60,330) -->
+  <line x1="60" y1="330" x2="300" y2="330" stroke="#2a1a0e" stroke-width="1"/>
+  <!-- arc radius 240 small angle ~17deg up: end at cos17*240=229.5,sin17*240=70.2 -> (289.5, 259.8) -->
+  <path d="M 300 330 A 240 240 0 0 0 289 260" fill="none" stroke="#C8102E" stroke-width="2"/>
+  <line x1="60" y1="330" x2="289" y2="260" stroke="#2a1a0e" stroke-width="1.2"/>
+  <!-- vertical drop = sin theta at x=289: from (289,330) up to (289,260) -->
+  <line x1="289" y1="330" x2="289" y2="260" stroke="#6B3520" stroke-width="2"/>
+  <polyline points="277,330 277,318 289,318" fill="none" stroke="#6B3520" stroke-width="1"/>
+  <text x="295" y="298" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#6B3520">sin θ</text>
+  <text x="225" y="250" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#C8102E">arc = θ</text>
+  <path d="M 110 330 A 50 50 0 0 0 107 320" fill="none" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="120" y="324" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">θ</text>
+  <text x="60" y="362" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">arc and vertical drop nearly equal</text>
+
+  <!-- RIGHT panel: y vs theta plot -->
+  <text x="400" y="92" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.08em" fill="#545454">y = θ  VS  y = sin θ</text>
+  <!-- axes: origin (400,330), x to 660 (theta 0..1.2 rad), y up to 110 -->
+  <line x1="400" y1="330" x2="670" y2="330" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="400" y1="340" x2="400" y2="110" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="676" y="334" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">θ (rad)</text>
+  <text x="408" y="118" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">y</text>
+  <!-- scale: theta 0..1.2 over 240px -> 200px/rad; y same 200px/unit; max y=1 -> 200px up from 330 = 130 -->
+  <!-- tick at theta=0.5 -> x=400+100=500 -->
+  <line x1="500" y1="330" x2="500" y2="335" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="500" y="350" text-anchor="middle" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="9" fill="#545454">0.5</text>
+  <line x1="600" y1="330" x2="600" y2="335" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="600" y="350" text-anchor="middle" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="9" fill="#545454">1.0</text>
+
+  <!-- line y=theta: from (400,330) slope -200px/rad i.e. for theta=1.2 -> x=640,y=330-240=90 but cap at theta=1.1 x=620,y=330-220=110 -->
+  <line x1="400" y1="330" x2="620" y2="110" stroke="#545454" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="556" y="150" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">y = θ</text>
+
+  <!-- curve y=sin theta sampled: theta(rad)->x=400+200t, y=330-200*sin t -->
+  <!-- t=0:(400,330) t=0.2:(440,330-39.7=290.3) t=0.4:(480,330-77.9=252.1) t=0.6:(520,330-112.9=217.1) t=0.8:(560,330-143.5=186.5) t=1.0:(600,330-168.3=161.7) t=1.1:(620,330-178.3=151.7) -->
+  <polyline points="400,330 440,290 480,252 520,217 560,187 600,162 620,152" fill="none" stroke="#C8102E" stroke-width="2"/>
+  <text x="624" y="168" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#C8102E">y = sin θ</text>
+
+  <!-- divergence marker near theta ~0.6 -->
+  <text x="455" y="318" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#2a1a0e">overlap</text>
+  <line x1="560" y1="187" x2="560" y2="155" stroke="#2a1a0e" stroke-width="0.75" stroke-dasharray="2 2"/>
+  <text x="566" y="174" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="9" fill="#545454">gap grows</text>
+
+  <text x="350" y="396" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">lim(θ→0) sin θ / θ = 1, with θ in radians — this linearization turns the hard pendulum into simple harmonic motion.</text>
+</svg>

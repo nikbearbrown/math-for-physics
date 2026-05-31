@@ -1,0 +1,51 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Slicing a disk into rings for the moment of inertia</title>
+  <desc id="desc">A disk of radius R is sliced into thin concentric rings. One ring at radius r with thickness d-r has circumference two pi r, so its mass is the area density sigma times two pi r d-r. Integrating r squared d-m from center to rim gives the moment of inertia one half M R squared.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="420" fill="#FFFFFF"/>
+  <text x="32" y="40" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#2a1a0e">The setup step: write dm in terms of the integration variable</text>
+  <text x="32" y="58" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">Choose a slice that matches the symmetry. For a disk it is a thin ring, not a strip — that is the load-bearing decision.</text>
+
+  <!-- disk center (220,250) R=140 -->
+  <circle cx="220" cy="250" r="140" fill="#F5EFE8" stroke="#2a1a0e" stroke-width="1.2"/>
+  <!-- several rings -->
+  <circle cx="220" cy="250" r="40" fill="none" stroke="#D4D4D4" stroke-width="0.75"/>
+  <circle cx="220" cy="250" r="70" fill="none" stroke="#D4D4D4" stroke-width="0.75"/>
+  <circle cx="220" cy="250" r="100" fill="none" stroke="#D4D4D4" stroke-width="0.75"/>
+  <!-- highlighted ring at r=100, thickness ~10 -->
+  <circle cx="220" cy="250" r="100" fill="none" stroke="#C8102E" stroke-width="9"/>
+  <!-- center -->
+  <circle cx="220" cy="250" r="3" fill="#2a1a0e"/>
+  <!-- axis dot (out of page) -->
+  <circle cx="220" cy="250" r="8" fill="none" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="220" y="254" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#2a1a0e">·</text>
+
+  <!-- r line -->
+  <line x1="220" y1="250" x2="291" y2="180" stroke="#6B3520" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="250" y="206" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#6B3520">r</text>
+  <!-- R line -->
+  <line x1="220" y1="250" x2="360" y2="250" stroke="#2a1a0e" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="300" y="266" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">R</text>
+  <!-- ring label -->
+  <line x1="320" y1="160" x2="290" y2="184" stroke="#2a1a0e" stroke-width="0.75"/>
+  <text x="324" y="158" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#C8102E">ring at r, width dr</text>
+
+  <!-- derivation panel -->
+  <rect x="420" y="120" width="248" height="220" fill="#FFFFFF" stroke="#D4D4D4" stroke-width="1"/>
+  <text x="436" y="146" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.06em" fill="#545454">SLICE → CONTRIBUTION → INTEGRATE</text>
+  <text x="436" y="176" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">σ = M / (π R²)</text>
+  <text x="436" y="200" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">ring area: dA = 2π r dr</text>
+  <text x="436" y="224" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">dm = σ · 2π r dr</text>
+  <line x1="436" y1="238" x2="652" y2="238" stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="436" y="262" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">I = ∫₀ᴿ r² dm</text>
+  <text x="436" y="284" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">  = (2M/R²) ∫₀ᴿ r³ dr</text>
+  <line x1="436" y1="298" x2="652" y2="298" stroke="#D4D4D4" stroke-width="1"/>
+  <rect x="436" y="306" width="120" height="0" fill="none"/>
+  <text x="436" y="326" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="15" fill="#C8102E">I = ½ M R²</text>
+
+  <text x="350" y="384" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">The r² weighting bites hardest at large r — which is why a hollow tube (mass at the rim) is hardest to spin up.</text>
+</svg>

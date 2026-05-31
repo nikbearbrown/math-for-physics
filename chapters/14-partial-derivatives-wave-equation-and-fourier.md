@@ -91,6 +91,9 @@ $$f_n = \frac{nv}{2L}, \qquad n = 1, 2, 3, \dots$$
 
 The lowest, $f_1 = v/2L$, is the **fundamental**; the rest are its integer **harmonics**. A guitar string sounds a definite pitch because only these special frequencies survive on it. And the fact that the harmonics are exact integer multiples of the fundamental is the seed of the chapter's last big idea.
 
+![Three stacked panels showing the first three standing-wave modes of a string fixed at both ends: one arch, two arches, three arches, with interior nodes marked.](images/14-partial-derivatives-wave-equation-and-fourier-fig-01.png)
+*Figure 14.1 — Standing-wave modes of a fixed string. Nodes are forced at the ends, so only λₙ = 2L/n fit; mode n has n−1 interior nodes and frequency fₙ = nv/2L, an integer multiple of the fundamental.*
+
 ### Fourier series: any periodic signal is a sum of sines
 
 A real plucked string does not vibrate in a single mode. It vibrates in *many* harmonics at once, in proportions set by how and where it was plucked, and that mixture is what gives the note its timbre. Daniel Bernoulli conjectured in 1753 that *every* possible vibration of the string is a superposition of the harmonic modes — a sum of sinusoids at the fundamental and its integer multiples [verify]. Euler did not believe an arbitrary shape could be built from smooth sines. Bernoulli was essentially right, and Joseph Fourier proved the general claim in 1822 (after Lagrange had blocked his earlier 1807 memoir) [verify; contested — see pantry]:
@@ -108,6 +111,9 @@ Concretely, a square wave of period $T$ is the sum
 $$y(t) = \frac{4}{\pi}\left[\sin\omega_0 t + \frac{1}{3}\sin 3\omega_0 t + \frac{1}{5}\sin 5\omega_0 t + \cdots\right],$$
 
 odd harmonics with amplitudes falling off as $1/n$. Add just the first term and you get a lone sine; add the third harmonic and the top flattens; add the fifth, seventh, and the shape squares up, the corners sharpening with each term (a small persistent overshoot at the jump, the Gibbs phenomenon, is the one place the smooth sines protest a sharp corner — Euler's old doubt, made quantitative). This is *why a clarinet and a violin sound different* on the same pitch: same fundamental frequency, different recipe of harmonic amplitudes.
+
+![A dashed square wave with three Fourier partial sums overlaid: one sine term, two terms beginning to flatten, three terms squaring up the corners.](images/14-partial-derivatives-wave-equation-and-fourier-fig-02.png)
+*Figure 14.2 — A square wave built from summed Fourier sine terms. Each added odd harmonic squares up the shape; a small persistent overshoot at the jumps is the Gibbs phenomenon.*
 
 ### Coda: the decibel as a logarithm
 

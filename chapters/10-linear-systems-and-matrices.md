@@ -88,6 +88,12 @@ $$y = \frac{a_{11}b_2 - a_{21}b_1}{\det A}.$$
 
 If $\det A = 0$, that fraction is undefined — there is no unique value of $y$. Geometrically, each equation $a_{i1}x + a_{i2}y = b_i$ is a straight line in the $(x,y)$ plane, and the solution is their crossing point. A nonzero determinant means the lines cross at exactly one point: one solution. A zero determinant means the lines are *parallel* — either they never meet (no solution) or they are the same line (infinitely many solutions). The determinant is the number that asks: *do these lines actually cross?*
 
+![A 2×2 linear system drawn as two intersecting lines, with the solution at their crossing point.](images/10-linear-systems-and-matrices-fig-01.png)
+*Figure 10.1 — Two equations are two lines; the simultaneous solution is the single point where they cross.*
+
+![Two panels: a nonzero determinant spans a parallelogram of positive area and the lines cross once; a zero determinant collapses the parallelogram and the lines are parallel.](images/10-linear-systems-and-matrices-fig-02.png)
+*Figure 10.2 — The determinant as signed area: nonzero area means one crossing (unique solution); zero area means parallel lines (no unique solution).*
+
 ### Method 3: Cramer's rule
 
 We can package the answer for *both* unknowns in determinant form. Repeating the algebra for $x$ gives the symmetric result

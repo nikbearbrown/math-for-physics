@@ -50,6 +50,9 @@ does *not* mean "the value of $g$ when $h = 0$." It means: we can force $g(h)$ t
 
 This is the most common place students stumble: the limit is the value the function *heads toward*, which may be a value it never takes. Hold that thought through the next derivation, where the difference quotient is meaningless at $h = 0$ yet has a perfectly definite limit.
 
+![The parabola x = ½gt² with a fixed point at t and several secant lines to points at t+Δt for shrinking Δt; as Δt → 0 the secant tilts toward the tangent, and the difference quotient Δx/Δt approaches the derivative dx/dt.](images/06-limits-and-the-derivative-fig-01.png)
+*Figure 6.1 — The derivative is the limit of the difference quotient: we never set Δt = 0, we watch where the ratio heads.*
+
 ---
 
 ## Development: the derivative from the limit, computed by hand
@@ -116,6 +119,9 @@ $$a(t) = \frac{dv}{dt} = \frac{d}{dt}\frac{dx}{dt} = \frac{d^{2}x}{dt^{2}}.$$
 
 Acceleration is the *second derivative* of position. The notation $d^2x/dt^2$ records "differentiate $x$ twice with respect to $t$." This is the payoff of treating the derivative as an object: velocity is the slope of position, acceleration is the slope of velocity, and the same machine applies at each level.
 
+![Three stacked plots sharing a time axis: position x = ½gt² (parabola), its slope velocity v = gt (rising line), and the slope of velocity, acceleration a = g (flat line); arrows link "slope of" between panels.](images/06-limits-and-the-derivative-fig-02.png)
+*Figure 6.2 — Each curve is the slope of the one above it: differentiating descends from position to velocity to constant acceleration.*
+
 ---
 
 ## Worked examples
@@ -178,10 +184,10 @@ The derivative is one idea — the limit of a ratio of changes — and it answer
 
 ## Sources
 
-- Isaac Newton, *De analysi per aequationes numero terminorum infinitas* (1669; pub. 1711) and *Method of Fluxions* (1671; pub. 1736) — fluxions as instantaneous rates; velocity as the fluxion of position. [verify] (original primary sources)
-- Gottfried Wilhelm Leibniz, "Nova Methodus pro Maximis et Minimis," *Acta Eruditorum* (1684) — the first printed differential calculus; the product rule and the $dx$ notation. [verify] (original primary source)
-- George Berkeley, *The Analyst* (1734) — the "ghosts of departed quantities" critique motivating the limit. [verify] (original primary source)
-- Augustin-Louis Cauchy, *Cours d'analyse* (1821) and *Résumé des leçons sur le calcul infinitésimal* (1823) — refounding calculus on the limit. [verify] (original primary sources)
-- Karl Weierstrass (lectures, c. 1861, transmitted via students) — the modern $\varepsilon$–$\delta$ form of the limit; Bernard Bolzano (c. 1817) gave an earlier rigorous version. [verify] (the precise Cauchy/Weierstrass/Bolzano attribution is debated; see pantry)
+- Isaac Newton, *De analysi per aequationes numero terminorum infinitas* (1669; pub. 1711) and *Method of Fluxions* (1671; pub. 1736) — fluxions as instantaneous rates; velocity as the fluxion of position. [verified — see factchecks/06-limits-and-the-derivative-assertions.md] (original primary sources)
+- Gottfried Wilhelm Leibniz, "Nova Methodus pro Maximis et Minimis," *Acta Eruditorum* (1684) — the first printed differential calculus; the product rule and the $dx$ notation. [verified — see factchecks/06-limits-and-the-derivative-assertions.md] (original primary source)
+- George Berkeley, *The Analyst* (1734) — the "ghosts of departed quantities" critique motivating the limit. [verified — see factchecks/06-limits-and-the-derivative-assertions.md] (original primary source)
+- Augustin-Louis Cauchy, *Cours d'analyse* (1821) and *Résumé des leçons sur le calcul infinitésimal* (1823) — refounding calculus on the limit. [verified — see factchecks/06-limits-and-the-derivative-assertions.md] (original primary sources)
+- Karl Weierstrass (lectures, c. 1861, transmitted via students) — the modern $\varepsilon$–$\delta$ form of the limit; Bernard Bolzano (c. 1817) gave an earlier rigorous version. [verified — Bolzano 1817 / Cauchy 1821 / Weierstrass c.1861 confirmed; the precise Cauchy/Weierstrass/Bolzano attribution is debated, see factchecks/06-limits-and-the-derivative-assertions.md and pantry]
 - Source chapter (this book's archive): "Motion Along a Straight Line" — $v = dx/dt$, $a = dv/dt = d^2x/dt^2$, and the free-fall worked numbers.
-- D. Tall & S. Vinner, "Concept image and concept definition in mathematics," *Educational Studies in Mathematics* 12 (1981): 151–169 — the limit-as-value-approached misconception. [verify]
+- D. Tall & S. Vinner, "Concept image and concept definition in mathematics," *Educational Studies in Mathematics* 12 (1981): 151–169 — the limit-as-value-approached misconception. [verified — see factchecks/06-limits-and-the-derivative-assertions.md]

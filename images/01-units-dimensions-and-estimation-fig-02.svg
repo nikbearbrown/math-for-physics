@@ -1,0 +1,47 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Deriving the pendulum period by matching dimension exponents</title>
+  <desc id="desc">Assuming the period equals C times length to the a, gravity to the b, mass to the c, and matching the exponents of L, M, T on both sides gives c equals zero, b equals minus one half, a equals one half, so the period is C times the square root of length over gravity.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="420" fill="#FFFFFF"/>
+  <text x="32" y="40" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#2a1a0e">Dimensions hand you the form of the answer</text>
+  <text x="32" y="58" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">Assume the pendulum period is a product of powers, then force the dimensions to match base dimension by base dimension.</text>
+
+  <text x="32" y="98" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="15" fill="#2a1a0e">Tₚ = C · ℓ ᵃ g ᵇ m ᶜ</text>
+  <text x="300" y="98" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">C is a dimensionless constant</text>
+
+  <text x="32" y="128" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.08em" fill="#545454">RIGHT SIDE   [ℓᵃ gᵇ mᶜ] = Lᵃ (L T⁻²)ᵇ Mᶜ = L^(a+b) T^(−2b) M^c</text>
+  <text x="32" y="148" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.08em" fill="#545454">LEFT SIDE    [Tₚ] = T   →   L⁰ T¹ M⁰</text>
+
+  <!-- matching table -->
+  <rect x="32" y="170" width="430" height="150" fill="#F5EFE8" stroke="#D4D4D4" stroke-width="1"/>
+  <line x1="32" y1="200" x2="462" y2="200" stroke="#D4D4D4" stroke-width="1"/>
+  <line x1="180" y1="170" x2="180" y2="320" stroke="#D4D4D4" stroke-width="1"/>
+  <line x1="320" y1="170" x2="320" y2="320" stroke="#D4D4D4" stroke-width="1"/>
+  <text x="48" y="190" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.06em" fill="#545454">BASE DIM</text>
+  <text x="196" y="190" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.06em" fill="#545454">MATCH EXPONENTS</text>
+  <text x="336" y="190" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.06em" fill="#545454">SOLVE</text>
+
+  <text x="48" y="228" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" fill="#2a1a0e">Mass  M</text>
+  <text x="196" y="228" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">c = 0</text>
+  <text x="336" y="228" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#C8102E">mass irrelevant</text>
+
+  <text x="48" y="268" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" fill="#2a1a0e">Time  T</text>
+  <text x="196" y="268" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">−2b = 1</text>
+  <text x="336" y="268" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">b = −½</text>
+
+  <text x="48" y="308" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" fill="#2a1a0e">Length  L</text>
+  <text x="196" y="308" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">a + b = 0</text>
+  <text x="336" y="308" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="12" fill="#2a1a0e">a = +½</text>
+
+  <!-- result -->
+  <line x1="500" y1="200" x2="540" y2="200" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <rect x="500" y="220" width="168" height="80" fill="#FFFFFF" stroke="#C8102E" stroke-width="1.5"/>
+  <text x="584" y="258" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="15" fill="#2a1a0e">Tₚ = C √(ℓ / g)</text>
+  <text x="584" y="282" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">the full theory: C = 2π</text>
+
+  <text x="350" y="360" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">No equation of motion was solved. Dimensions fix every exponent; only the pure number C is left to the physics.</text>
+</svg>

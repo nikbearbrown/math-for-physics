@@ -1,0 +1,55 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">The secant tilts into the tangent as the interval shrinks</title>
+  <desc id="desc">On the curve x equals one-half g t squared, a fixed point at t has several secant lines drawn to points at t plus delta-t for shrinking delta-t; as delta-t goes to zero the secant tilts toward the tangent line, and the difference quotient delta-x over delta-t approaches the derivative dx over dt.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="420" fill="#FFFFFF"/>
+  <text x="32" y="40" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#2a1a0e">The derivative is the limit of the difference quotient</text>
+  <text x="32" y="58" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">As Δt → 0 the second point slides down the curve and the secant tilts toward the tangent that grazes at t.</text>
+
+  <!-- axes: origin (90,340), t to right, x up. Curve x=0.5 g t^2, scaled -->
+  <line x1="90" y1="340" x2="560" y2="340" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="90" y1="350" x2="90" y2="80" stroke="#2a1a0e" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="566" y="344" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">t</text>
+  <text x="84" y="78" text-anchor="end" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#545454">x(t)</text>
+
+  <!-- parabola x = k t^2. Choose so t in [0..21px units], plot. Use points t=0..6 mapped x px= 90+ t*70 ; height = 340 - 6*t^2 -->
+  <!-- t0:(90,340) t1:(160,334) t2:(230,316) t3:(300,286) t4:(370,244) t5:(440,190) t6:(510,124) -->
+  <polyline points="90,340 160,334 230,316 300,286 370,244 440,190 510,124" fill="none" stroke="#C8102E" stroke-width="2"/>
+  <text x="500" y="116" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#C8102E">x = ½ g t²</text>
+
+  <!-- fixed point at t=2 -> (230,316) -->
+  <circle cx="230" cy="316" r="4.5" fill="#2a1a0e"/>
+  <text x="216" y="334" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">t</text>
+
+  <!-- secants from (230,316) to t=5 (440,190), t=4 (370,244), t=3 (300,286) -->
+  <line x1="230" y1="316" x2="470" y2="174" stroke="#545454" stroke-width="1" stroke-dasharray="6 3"/>
+  <line x1="230" y1="316" x2="400" y2="226" stroke="#545454" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="230" y1="316" x2="330" y2="272" stroke="#545454" stroke-width="1"/>
+  <circle cx="440" cy="190" r="3.5" fill="#545454"/>
+  <circle cx="370" cy="244" r="3.5" fill="#545454"/>
+  <circle cx="300" cy="286" r="3.5" fill="#545454"/>
+  <text x="448" y="186" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">secants (shrinking Δt)</text>
+
+  <!-- tangent at t=2: slope of x=6t^2 -> 12t at t=2 =24 px-units... draw tangent line. tangent: through (230,316) with slope matching curve. Use direction toward (300,272) extended -->
+  <line x1="150" y1="364" x2="350" y2="246" stroke="#2a1a0e" stroke-width="2"/>
+  <text x="330" y="240" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">tangent at t</text>
+
+  <!-- delta markers -->
+  <line x1="230" y1="356" x2="300" y2="356" stroke="#6B3520" stroke-width="1"/>
+  <text x="265" y="370" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#6B3520">Δt</text>
+
+  <!-- panel -->
+  <rect x="585" y="150" width="84" height="0" fill="none"/>
+  <rect x="585" y="130" width="84" height="140" fill="#F5EFE8" stroke="#D4D4D4" stroke-width="1"/>
+  <text x="627" y="156" text-anchor="middle" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="9" letter-spacing="0.04em" fill="#545454">THE LIMIT</text>
+  <text x="627" y="186" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">Δx / Δt</text>
+  <line x1="612" y1="200" x2="642" y2="200" stroke="#2a1a0e" stroke-width="1"/>
+  <text x="627" y="216" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" fill="#C8102E">↓ Δt→0</text>
+  <text x="627" y="246" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" fill="#2a1a0e">dx / dt</text>
+
+  <text x="350" y="398" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">We never set Δt = 0 (that gives 0/0); we watch where the ratio heads, and name that destination the derivative.</text>
+</svg>

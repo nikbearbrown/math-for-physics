@@ -46,6 +46,9 @@ $$x = \lim_{n\to\infty}\sum_{k=1}^n v(t_k)\,\Delta t = \int_0^T v(t)\,dt.$$
 
 Displacement is the area under the velocity–time curve. The chopping made the varying speed manageable; the limit made it exact.
 
+![A velocity curve shown with a coarse partition of wide rectangles (visible gaps to the curve) and a fine partition of thin rectangles (gaps nearly gone); each rectangle is a sliver v(tₖ)Δt, and the sum approaches the integral ∫v dt.](images/08-the-integral-fig-01.png)
+*Figure 8.1 — The definite integral is the limit of a sum of thin slivers; as the slices thin, the staircase hugs the curve and the sum becomes exact.*
+
 ---
 
 ## Development: the antiderivative, and the surprise
@@ -78,7 +81,10 @@ A function $F$ whose derivative is $f$ is called an **antiderivative** of $f$. P
 
 $$\boxed{\,\int_a^b f(x)\,dx = F(b) - F(a)\,.}$$
 
-This is the **Fundamental Theorem of Calculus, Part 2** — the shortcut. To compute the area (the accumulation), you do *not* have to grind out the limit of a Riemann sum. Find an antiderivative $F$, evaluate it at the two endpoints, subtract. The infinite sum collapses to one subtraction. This is why the integral, defined as a forbidding limit of sums, is in practice computed by guessing a function and plugging in two numbers.
+This is the **Fundamental Theorem of Calculus, Part 2** — the shortcut. To compute the area (the accumulation), you do *not* have to grind out the limit of a Riemann sum. Find an antiderivative $F$, evaluate it at the two endpoints, subtract. The infinite sum collapses to one subtraction.
+
+![Paired panels: on the left, f with the swept area A(x) shaded to a moving edge x and a thin growth strip f(x)dx; on the right, the accumulation curve A(x) whose slope at x equals f(x); the boxed result ∫ₐᵇ f = F(b) − F(a).](images/08-the-integral-fig-02.png)
+*Figure 8.2 — The Fundamental Theorem links slope and area: the accumulation A(x) has derivative f, so finding area and finding slope are inverse operations.* This is why the integral, defined as a forbidding limit of sums, is in practice computed by guessing a function and plugging in two numbers.
 
 One distinction to keep clean: $\int_a^b f\,dx$ is a *number* (the definite integral, an accumulation), while $\int f\,dx$ without limits denotes the *family of antiderivatives* (the indefinite integral, a set of functions differing by a constant $C$). The constant matters when you reconstruct a function from its rate; it cancels when you take a difference $F(b) - F(a)$.
 
@@ -142,9 +148,9 @@ The integral is the mathematics of "how much accumulates," and that question is 
 
 ## Sources
 
-- Bernhard Riemann, "Über die Darstellbarkeit einer Function durch eine trigonometrische Reihe" (habilitation, 1854; pub. 1867) — the integral as the limit of sums over partitions (Riemann sums). [verify] (original primary source)
-- Augustin-Louis Cauchy, *Résumé des leçons sur le calcul infinitésimal* (1823) — the first rigorous definition of the integral as a limit of sums for continuous functions, and a version of the Fundamental Theorem; Riemann generalized Cauchy's construction. [verify] (original primary source; the Cauchy/Riemann credit split is summarized from secondary sources — see pantry)
-- Archimedes, *Quadrature of the Parabola* and *The Method* (3rd c. BCE) — the method of exhaustion, area as a limit of approximating polygons. [verify] (original primary sources)
-- Gottfried Wilhelm Leibniz — the $\int$ symbol (1686) for *summa*; Isaac Barrow, *Lectiones Geometricae* (1670) — a geometric form of the Fundamental Theorem. [verify] (original primary sources)
+- Bernhard Riemann, "Über die Darstellbarkeit einer Function durch eine trigonometrische Reihe" (habilitation, 1854; pub. 1867) — the integral as the limit of sums over partitions (Riemann sums). [verified — 1854 habilitation and title confirmed; publication 1867/1868 per source, see factchecks/08-the-integral-assertions.md] (original primary source)
+- Augustin-Louis Cauchy, *Résumé des leçons sur le calcul infinitésimal* (1823) — the first rigorous definition of the integral as a limit of sums for continuous functions, and a version of the Fundamental Theorem; Riemann generalized Cauchy's construction. [verified — Cauchy/Riemann credit split confirmed from secondary sources, see factchecks/08-the-integral-assertions.md and pantry] (original primary source)
+- Archimedes, *Quadrature of the Parabola* and *The Method* (3rd c. BCE) — the method of exhaustion, area as a limit of approximating polygons. [verified — see factchecks/08-the-integral-assertions.md] (original primary sources)
+- Gottfried Wilhelm Leibniz — the $\int$ symbol (1686) for *summa*; Isaac Barrow, *Lectiones Geometricae* (1670) — a geometric form of the Fundamental Theorem. [verified — see factchecks/08-the-integral-assertions.md] (original primary sources)
 - Source chapter (this book's archive): "Work and Kinetic Energy" — work as $W = \int \vec{F}\cdot d\vec{r}$, the spring/bow example; "Motion Along a Straight Line" — displacement as the integral of velocity; "Linear Momentum and Collisions" — impulse as $\int F\,dt = \Delta p$.
-- V. Sealey, "A framework for characterizing student understanding of Riemann sums and definite integrals," *Journal of Mathematical Behavior* 33 (2014): 230–245; S. R. Jones, work on the product/accumulation conception of integrals (2013, 2015) — the documented failure to connect the symbolic integral to the limit of sums and to construct $f(x)\,dx$. [verify]
+- V. Sealey, "A framework for characterizing student understanding of Riemann sums and definite integrals," *Journal of Mathematical Behavior* 33 (2014): 230–245; S. R. Jones, work on the product/accumulation conception of integrals (2013, 2015) — the documented failure to connect the symbolic integral to the limit of sums and to construct $f(x)\,dx$. [verified — see factchecks/08-the-integral-assertions.md]

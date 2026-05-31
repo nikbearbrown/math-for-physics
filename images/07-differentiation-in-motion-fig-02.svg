@@ -1,0 +1,56 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Centripetal acceleration from a rotating vector</title>
+  <desc id="desc">A particle in uniform circular motion: the position vector r points from center to particle, the velocity v is tangent (perpendicular to r) with constant magnitude r omega, and differentiating again gives the acceleration a equals minus omega squared r, pointing back to the center, with magnitude v squared over r.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+    <marker id="arrowred" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#C8102E"/>
+    </marker>
+    <marker id="arrowbr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#6B3520"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="420" fill="#FFFFFF"/>
+  <text x="32" y="40" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#2a1a0e">v²/r falls out of differentiating a rotating vector twice</text>
+  <text x="32" y="58" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">Constant speed, turning direction: the velocity vector changes, so its derivative — the acceleration — is nonzero.</text>
+
+  <!-- circle center (260,250) r=150 -->
+  <circle cx="260" cy="250" r="150" fill="none" stroke="#D4D4D4" stroke-width="1.2"/>
+  <circle cx="260" cy="250" r="3" fill="#2a1a0e"/>
+  <text x="248" y="268" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">center</text>
+
+  <!-- particle at angle 40deg: cos40=0.766,sin40=0.643 -> (260+114.9, 250-96.4)=(375,154) -->
+  <!-- position vector r -->
+  <line x1="260" y1="250" x2="375" y2="154" stroke="#6B3520" stroke-width="2" marker-end="url(#arrowbr)"/>
+  <text x="304" y="190" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" fill="#6B3520">r</text>
+  <circle cx="375" cy="154" r="5" fill="#2a1a0e"/>
+
+  <!-- velocity tangent: perpendicular to r, in CCW direction = (-sin40, -cos40)=(-0.643,-0.766) -> from (375,154) to (375-77, 154-92)=(298,62) -->
+  <line x1="375" y1="154" x2="298" y2="62" stroke="#2a1a0e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="282" y="56" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" fill="#2a1a0e">v</text>
+  <text x="300" y="90" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">tangent, |v| = rω</text>
+
+  <!-- right-angle mark between r and v at particle -->
+  <polyline points="363,168 375,176 387,162" fill="none" stroke="#545454" stroke-width="0"/>
+
+  <!-- acceleration: points back to center, from (375,154) toward (260,250): direction (-0.766,+0.643)*60 -> (375-46,154+39)=(329,193) -->
+  <line x1="375" y1="154" x2="320" y2="200" stroke="#C8102E" stroke-width="2.5" marker-end="url(#arrowred)"/>
+  <text x="384" y="186" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" fill="#C8102E">a</text>
+  <text x="384" y="202" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">toward center</text>
+
+  <!-- derivation panel -->
+  <rect x="470" y="120" width="198" height="220" fill="#F5EFE8" stroke="#D4D4D4" stroke-width="1"/>
+  <text x="486" y="146" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.06em" fill="#545454">DIFFERENTIATE TWICE</text>
+  <text x="486" y="174" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">r = r cos ωt î + r sin ωt ĵ</text>
+  <line x1="486" y1="188" x2="652" y2="188" stroke="#D4D4D4" stroke-width="0.75"/>
+  <text x="486" y="210" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">v = dr/dt,  |v| = rω</text>
+  <text x="486" y="234" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">a = dv/dt = −ω² r</text>
+  <text x="486" y="252" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">points opposite r → inward</text>
+  <line x1="486" y1="266" x2="652" y2="266" stroke="#D4D4D4" stroke-width="1"/>
+  <rect x="486" y="282" width="166" height="44" fill="#FFFFFF" stroke="#C8102E" stroke-width="1.5"/>
+  <text x="569" y="310" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="15" fill="#2a1a0e">a_c = v² / r</text>
+
+  <text x="350" y="392" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">The pilot in an 8-g turn: speed never changes, but the direction does, and the derivative sees the direction.</text>
+</svg>

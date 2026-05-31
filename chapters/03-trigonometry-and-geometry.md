@@ -47,7 +47,10 @@ The right-triangle picture caps angles at $90°$ — you cannot have an "opposit
 
 $$(\cos\theta,\ \sin\theta).$$
 
-For acute $\theta$ this agrees exactly with the triangle definitions (hypotenuse $=1$). But now $\theta$ can be anything: at $\theta = 90°$ the point is $(0,1)$, so $\cos 90° = 0$ and $\sin 90° = 1$; at $\theta = 180°$ it is $(-1,0)$; and as $\theta$ keeps increasing the point cycles around, which is *why* sine and cosine are periodic with period one full turn. The unit circle is the natural home of the trig functions — and, as you will see in Chapter 12, it is literally the picture behind oscillation and the complex exponential.
+For acute $\theta$ this agrees exactly with the triangle definitions (hypotenuse $=1$). But now $\theta$ can be anything: at $\theta = 90°$ the point is $(0,1)$, so $\cos 90° = 0$ and $\sin 90° = 1$; at $\theta = 180°$ it is $(-1,0)$; and as $\theta$ keeps increasing the point cycles around, which is *why* sine and cosine are periodic with period one full turn.
+
+![Unit circle of radius 1 with a point at angle θ from the +x axis located at (cosθ, sinθ); the horizontal leg is cosθ, the vertical leg is sinθ, and the arc length equals θ in radians.](images/03-trigonometry-and-geometry-fig-01.png)
+*Figure 3.1 — Cosine and sine are the coordinates of a point on the unit circle, extending the right-triangle ratios to any angle.* The unit circle is the natural home of the trig functions — and, as you will see in Chapter 12, it is literally the picture behind oscillation and the complex exponential.
 
 This also forces the right way to *measure* an angle. The **radian** measures an angle by the length of arc it cuts on a unit circle: an angle of one radian subtends an arc equal to the radius. A full circle has circumference $2\pi r$, so a full turn is $2\pi$ radians; $180° = \pi$ radians; one radian is about $57.3°$. The radian is dimensionless (it is a length divided by a length), and it is *not just another unit to convert to* — it is the measure that makes the calculus of trig functions clean. This is not a convention but a mathematical fact: the derivative formulas $\frac{d}{d\theta}\sin\theta = \cos\theta$ and $\frac{d}{d\theta}\cos\theta = -\sin\theta$ hold *only* when $\theta$ is in radians. A 2025 multinational survey found that only about a quarter of college students recognized this; roughly 71% wrongly believed any unit works `[verify — arXiv:2503.01525]`. A student who differentiates $\sin(\text{degrees})$ as if the rule still applied will get every oscillation problem wrong. The radian earns its place in Chapter 6.
 
@@ -71,7 +74,10 @@ You can *see* the first one on the unit circle: for a small angle, the arc lengt
 
 $$\lim_{\theta\to 0}\frac{\sin\theta}{\theta} = 1 \quad(\theta \text{ in radians}),$$
 
-a limit first made explicit by Cotes and put on rigorous footing by Cauchy. The Indian mathematician Mādhava (c. 1400) found the full power series for sine and cosine — $\sin\theta = \theta - \theta^3/6 + \cdots$ — roughly 250 years before Newton and Leibniz; the small-angle forms are just its leading terms. We will derive that series properly in Chapter 13. For now, hold onto the picture: *for small angles, the sine is the angle.*
+a limit first made explicit by Cotes and put on rigorous footing by Cauchy. <!-- FACT-CHECK FLAG: UNVERIFIED — Cauchy (1821) rigorous-limit attribution is standard; the specific "first made explicit by Cotes" claim for lim sinθ/θ could not be corroborated. See factchecks/03-trigonometry-and-geometry-assertions.md --> The Indian mathematician Mādhava (c. 1400) found the full power series for sine and cosine — $\sin\theta = \theta - \theta^3/6 + \cdots$ — roughly 250 years before Newton and Leibniz; the small-angle forms are just its leading terms. We will derive that series properly in Chapter 13. For now, hold onto the picture: *for small angles, the sine is the angle.*
+
+![A zoomed unit-circle wedge where the arc length θ and the vertical drop sinθ nearly coincide, beside a plot of y=θ (line) and y=sinθ (curve) hugging near the origin and diverging past about half a radian.](images/03-trigonometry-and-geometry-fig-03.png)
+*Figure 3.3 — As θ shrinks, the arc, the chord, and sinθ converge: sinθ ≈ θ in radians, the linearization that makes oscillation solvable.*
 
 ## Worked examples
 
@@ -82,6 +88,9 @@ Return to the cold open. The block's weight $mg$ points straight down; the incli
 $$\text{component into the surface} = mg\cos\theta, \qquad \text{component down the slope} = mg\sin\theta.$$
 
 The *down-slope* (driving) component carries the sine; the *into-surface* (normal) component carries the cosine. Sanity check the extremes: at $\theta = 0$ (flat ground) the down-slope component is $mg\sin 0 = 0$ — nothing drives the block, correct — and the into-surface component is $mg\cos 0 = mg$, the full weight, correct. At $\theta = 90°$ (vertical wall) the down-slope component is $mg$ (free fall along the wall) and the normal component is zero. The limits confirm the assignment.
+
+![A block on a ramp at angle θ with the weight mg resolved into a down-slope component mg sinθ and an into-surface component mg cosθ; an inset checks the flat and vertical limits.](images/03-trigonometry-and-geometry-fig-02.png)
+*Figure 3.2 — Build the right triangle and read the ratios: the driving component carries the sine, the normal component the cosine.*
 
 ### Example 2 — Projectile range and why 45° is best
 

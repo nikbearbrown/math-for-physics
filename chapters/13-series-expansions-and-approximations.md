@@ -73,6 +73,9 @@ $$\sin\theta = \theta - \frac{\theta^3}{6} + \cdots, \qquad \text{error of "}\si
 
 This is the crucial point that lets us answer "how small is small?" — *with a number*. The relative error is roughly $(\theta^3/6)/\theta = \theta^2/6$. At $\theta = 15^\circ = 0.262$ rad, that is $0.262^2/6 \approx 0.011$, about 1%. At $\theta = 5^\circ$, it falls to about 0.1%. The approximation is not exact and not arbitrary: it is a controlled error that grows like $\theta^2$, and *you* decide whether that is tolerable for the job at hand. One warning that trips up everyone: the series, and therefore the approximation, holds only for $\theta$ in **radians**. Using degrees gives nonsense.
 
+![The line y = θ and the curve y = sin θ drawn together over small angles, with the widening gap between them marked as the error θ³/6.](images/13-series-expansions-and-approximations-fig-02.png)
+*Figure 13.2 — The small-angle approximation sin θ ≈ θ. Near zero the line and curve coincide; the gap (the dropped term ≈ θ³/6) grows with angle, giving a relative error ≈ θ²/6 — about 1% at 15°, 0.1% at 5°.*
+
 Keeping the cosine to its first nontrivial term gives the companion result
 
 $$\cos\theta \approx 1 - \frac{\theta^2}{2},$$
@@ -98,6 +101,9 @@ A power series is an *infinite* sum, and infinite sums can fail to settle on a v
 $$\frac{1}{1 - x} = 1 + x + x^2 + x^3 + \cdots$$
 
 converges only for $|x| < 1$; feed it $x = 2$ and the partial sums $1, 3, 7, 15, \dots$ run off to infinity while the left side is a finite $-1$. Every power series has a **radius of convergence**: a range of $x$ around the expansion point within which adding terms homes in on the function, and outside which it diverges. For intro purposes you do not need the $\varepsilon$–$N$ machinery (that is the analysis course); you need the picture: a truncated Taylor series hugs the true curve near the expansion point and peels away from it farther out, and each extra term widens the region of good agreement. Truncation is trustworthy *near* the point and progressively untrustworthy away from it — which is exactly why "small angle" must be small.
+
+![The curve y = sin x with its one-, two-, and three-term Taylor approximations; each truncation tracks the true curve farther from the origin before peeling away.](images/13-series-expansions-and-approximations-fig-01.png)
+*Figure 13.1 — Taylor approximations of sin x converging. The one-term line y = x peels off first; adding terms widens the region of agreement, with the three-term polynomial tracking sin x furthest.*
 
 ## Worked examples
 
