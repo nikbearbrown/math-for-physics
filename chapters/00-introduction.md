@@ -1,44 +1,56 @@
 # Introduction
 
-*The physics course is a math course wearing a lab coat.*
+A learner opens the first chapter of *University Physics: with LLMs* with a familiar problem: there is too much information and not enough structure. The terms are available. The examples are available. The missing thing is a route through the material that turns exposure into understanding.
 
-Here is a confession that most physics textbooks will not make to your face: the introductory physics sequence is, underneath, a sequence of *mathematical tools*. Units and dimensional analysis. Algebra and proportional reasoning. Trigonometry. Vectors. Functions and graphs. Limits and the derivative. The integral. Linear systems. Differential equations. Complex exponentials. Series. Partial derivatives and the wave equation. That list is the table of contents of this book. It is also — rearranged, renamed, and hidden inside problems about blocks and springs and skydivers — the table of contents of your physics course.
+This book is about the gap between knowing the name of University Physics: with LLMs's subject and being able to use its ideas with judgment.
 
-The standard order presents the physics first and lets you discover the math you need, mid-problem, usually at the worst possible moment. You are halfway through a projectile problem when it turns out you needed to resolve a velocity into components, and you are now learning trigonometry under deadline. You meet the derivative as "instantaneous velocity" and never quite notice that you have learned a general operation that has nothing to do with motion. This book inverts that. **The math is the subject. The physics is the example.**
+The central argument is that University Physics: with LLMs is best learned as a sequence of distinctions, practices, and recurring problems rather than as a list of topics. A reader who can name those distinctions can move through the field with more confidence than a reader who has only memorized definitions.
 
-## The thesis
+This is written for learners, teachers, practitioners, and builders who want a clear path through the material.
 
-The claim is simple and it has teeth: if you learn the math *as math* — derived, general, transferable — then the physics becomes the place you *use* it, not the thing you must memorize. A student who has memorized "for an Atwood machine, $a = (m_2 - m_1)g/(m_1+m_2)$" has a fact that evaporates after the exam. A student who can isolate a variable in a multi-term relation, then read the result — *the system is stationary when the masses are equal; it free-falls when one mass vanishes* — has a skill that works on any relation among quantities, in any field, for the rest of their life.
+## What This Book Is
 
-There is a body of education research behind this, and it is unkind to the memorize-the-formula approach. Intro-physics students reliably do *worse* on a symbolic version of a problem than on a numerically identical one — which means that many students who can "do physics" do not actually understand the relations; they understand the arithmetic. The cure is to treat the mathematics as the thing worth understanding. That is what this book is.
+This book is a structured introduction to University Physics: with LLMs. It teaches the vocabulary of the field, shows how the main ideas connect, and gives readers enough conceptual grip to continue with more specialized work. It is designed to be read as a book, used as a reference, and integrated into an intelligent textbook system.
 
-## How to use this book
+## What This Book Is Not
 
-Every chapter has the same skeleton, and it is worth knowing the skeleton so you can read against it:
+This book is not a substitute for practice, mentorship, experimentation, or domain-specific judgment. It does not try to say everything. It tries to say enough, in the right order, so that the reader can recognize what matters next.
 
-1. **A cold open** — one concrete physics problem the chapter's math is required to solve, stated with no math yet. This is the *why*.
-2. **The tool, named** — a plain statement of the mathematical object or method.
-3. **Development and derivation** — the math built on the page. Where a formula appears, you will see where it comes from. Nothing is asserted that can be derived.
-4. **Worked examples** — two or three, drawn from real mechanics-and-waves problems.
-5. **Return to the cold open** — the opening problem, now solved with the tool.
-6. **Where it generalizes** — a short look at where this math goes next, in physics and far beyond it.
+## The Concept Running Through the Book
 
-Then a few exercises (at least one asks you to *derive*, not plug) and a list of sources.
+The recurring idea is transfer: the movement from explanation to usable understanding. Each chapter should help the reader carry an idea from the page into a problem, a classroom, a project, or a decision.
 
-Read in order if you are new; the tools stack. Vectors (Chapter 4) lean on trigonometry (Chapter 3); the derivative (Chapter 6) leans on functions and graphs (Chapter 5); everything in Part III leans on the calculus of Part II. If you are using the book as a reference, jump to the tool you need — but do not skip the derivations, because the derivation *is* the understanding.
+## How This Book Is Organized
 
-A note on honesty: this book is calibrated. When something is proved, it says so. When something is asserted because the full proof is beyond our scope, it says that too. Citations that have not been individually confirmed against the original source are flagged `[verify]`. Claims that are genuinely contested in the research carry a flag pointing you to the discussion. You are being trained to be tested on derivations, so you deserve to know which steps are airtight and which are hand-waves.
+- **Chapter 1: Units, Dimensions, and Estimation.** *The math of quantity itself — what a number must carry before it can mean anything.* On 23 September 1999, after nine months and 670 million kilometers, the Mars Climate Orbiter fired its engine to slip into orbit around Mars. It came...
+- **Chapter 2: Algebra and Equations in Physics.** *Solving for the symbol before the number — and reading what the symbol tells you.* Two blocks hang over a frictionless pulley on a single rope — the classic Atwood machine. One block has mass $m_1$, the other $m_2$. Released, the system...
+- **Chapter 3: Trigonometry and Geometry.** *Turning an angle into lengths — and the small-angle behavior that calculus and oscillation will need.* A block sits on a ramp tilted at angle $\theta$. Gravity pulls it straight down with force $mg$. But the block cannot move straight down —...
+- **Chapter 4: Vectors and Vector Algebra.** *Quantities with direction — and the two operations, alignment and twist, that make them computable.* You are in the right seat of a twin-engine airplane at 2,000 feet, the nose pointed northeast, the airspeed indicator reading 120 knots. But the air itself...
+- **Chapter 5: Functions, Graphs, and Power Laws.** *The shape of a relationship, and how to read an exponent off a straight line.* A **function** is a rule that assigns to each input exactly one output. We write $f(x)$ — read "$f$ of $x$" — for the output the rule...
+- **Chapter 6: Limits and the Derivative.** *How fast is it going* right now*? — the limit of a ratio of vanishing changes.* The **average velocity** of an object over a time interval is the change in position divided by the change in time: $$\bar{v} = \frac{x(t + \Delta...
+- **Chapter 7: Differentiation in Motion: Vector-Valued and Parametric Functions.** *The derivative scales up without a new idea: a vector function is several functions stacked, so you differentiate each one.* A particle moving through space has a position that is a vector changing in time — a **vector-valued function**: $$\vec{r}(t) = x(t)\,\hat{i}...
+- **Chapter 8: The Integral.** *The second question: how much accumulates? — and the theorem that reveals it is the first question run backwards.* Suppose a quantity accumulates as $f$ runs over an interval from $a$ to $b$ — distance accumulating as speed $v$ runs over time,...
+- **Chapter 9: Integration Techniques and Applications.** *Slice the object, write what each piece contributes, integrate — and the techniques are the derivative rules read backwards.* The Fundamental Theorem of the last chapter says integration undoes differentiation. So the two hardest differentiation rules, read backwards, become the two most...
+- **Chapter 10: Linear Systems and Matrices.** *When one equation is not enough: solving for several unknowns at once* A small pan hangs from a ceiling by two strings of unequal length, tied to two points a fixed distance apart. One string is short and steep; the other is...
+- **Chapter 11: Differential Equations and Oscillatory Motion.** *When the unknown is a function, not a number — and the equation tells you its rate of change* Pull a mass on a spring out to a distance $A$ from rest, hold it, and let go. You know, before releasing it,...
+- **Chapter 12: Complex Numbers and Exponentials.** *How an "impossible" number becomes the easiest language for oscillation* In the previous chapter the damped oscillator handed us a solution of the form $$x(t) = A_0\,e^{-bt/2m}\cos(\omega t + \phi).$$ Two things are happening at once: the amplitude is *decaying* (the $e^{-bt/2m}$...
+- **Chapter 13: Series, Expansions, and Approximations.** *Why "assume a small angle" is really a Taylor truncation — and how it makes the unsolvable solvable* A pendulum is the most familiar oscillator there is, and yet its exact equation of motion is, in a precise sense, unsolvable. Newton's second...
+- **Chapter 14: Partial Derivatives, the Wave Equation, and Fourier Analysis.** *Two variables, one partial differential equation, and the idea that any sound is a sum of pure tones* On December 26, 2004, the seafloor west of Sumatra ruptured and shoved a column of ocean upward. The disturbance spread across the Indian Ocean...
 
-## The three-part map
+## How to Read This Book
 
-**Part I — Quantities and Geometry (the language).** Before you can do calculus on a physical quantity, you have to know what a physical quantity *is*: a number with a dimension, an uncertainty, and — often — a direction. Chapters 1 through 4 build that language: dimensional analysis and estimation, algebra and proportionality, trigonometry, and vectors. This is the grammar. Skip it and everything later is mumbling.
+Read the chapters in order if you are new to the subject. If you already know the area, use the chapter titles as a map and move directly to the parts where your understanding is weakest. The chapters are designed to be self-contained enough for reference, but they work best as a progression from Units, Dimensions, and Estimation to Partial Derivatives, the Wave Equation, and Fourier Analysis.
 
-**Part II — Calculus (the engine).** Chapters 5 through 9 build calculus from functions and graphs, through limits and the derivative, to the integral and its applications — motivated throughout by motion, work, and the shapes of physical systems. This is the engine room of intro physics. Almost every result you will ever derive runs through here.
+## A Note About AI
 
-**Part III — Systems and Change (the hard tools).** Chapters 10 through 14 are where the mathematics gets genuinely powerful: linear systems and matrices, differential equations and oscillation, complex exponentials, series and approximations, and finally partial derivatives and the wave equation with a first taste of Fourier analysis. These are the tools that turn "a mass on a spring" into a complete theory of vibration, sound, and waves.
+AI matters to *University Physics: with LLMs* because the modern textbook is no longer only a static container. It is also part of a learning system: searchable, remixable, explainable, and increasingly connected to tools such as Medhavy. For Humanitarians AI books, the relevant question is not whether AI can replace the learner or the teacher. It cannot. The useful question is what AI can make easier to inspect: definitions, worked examples, misconceptions, practice sequences, alternate explanations, and the structure of an argument. This book treats AI as infrastructure for open, public-interest learning infrastructure. The chapters should still stand on their own as readable prose, but they are also designed to be legible to an intelligent textbook system.
 
-## Volume 1 and Volume 2
+## Closing Return
 
-This is **Volume 1**: the mathematics of the *first* physics course — mechanics and waves, the math you can carry on calculus taken concurrently. It stops where the introductory sequence stops. **Volume 2** is the sequel for the courses that follow: the full machinery of multivariable and vector calculus (the divergence and curl theorems that electromagnetism demands), the deeper linear algebra, and the partial differential equations of fields. Where a topic in this book has a richer life in the advanced sequence — and many do — you will see a forward pointer to "Volume 2." Think of Volume 1 as the tools you can hold in one hand, and Volume 2 as the workshop you graduate into.
+The learner at the opening does not need more noise. They need a path. This book is that path: not the whole territory, but a reliable way to begin moving through it.
 
-Now begin. Pick up the first tool.
+Let's go.
+
+## Tags
+
+University Physics: with LLMs, textbook, Medhavy, AI-assisted learning, Humanitarians AI Incorporated

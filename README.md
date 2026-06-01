@@ -2,41 +2,39 @@
 
 **Author:** Humanitarians AI Incorporated  
 **Publisher:** Humanitarians AI Incorporated, a 501(c)(3) nonprofit organization  
+**Copyright:** Copyright © 2026 Humanitarians AI Incorporated. All rights reserved.  
 **Edition:** 2026
 
-## Overview
+## Summary
 
-The first sign of trouble is usually not failure. It is fluency. The draft looks clean. The answer sounds reasonable. The chart has labels. The code runs. The plan has phases. The explanation has the rhythm of expertise. Nothing in the surface announces that a human still has work to do. This book is about the gap between a polished artifact and a trustworthy one. The central argument of **University Physics: with LLMs** is that readers need a working method for the part of the work that cannot be delegated:...
+*University Physics: with LLMs* is a structured textbook for readers who need a clear path through the subject rather than a loose collection of explanations. It begins with Units, Dimensions, and Estimation, moves through 14 core chapters, and ends with Partial Derivatives, the Wave Equation, and Fourier Analysis.
+
+AI matters to *University Physics: with LLMs* because the modern textbook is no longer only a static container. It is also part of a learning system: searchable, remixable, explainable, and increasingly connected to tools such as Medhavy. For Humanitarians AI books, the relevant question is not whether AI can replace the learner or the teacher. It cannot. The useful question is what AI can make easier to inspect: definitions, worked examples, misconceptions, practice sequences, alternate explanations, and the structure of an argument. This book treats AI as infrastructure for open, public-interest learning infrastructure. The chapters should still stand on their own as readable prose, but they are also designed to be legible to an intelligent textbook system.
 
 ## Table of Contents
 
-- [Front Matter](chapters/00-frontmatter.md)
-- [Introduction](chapters/00-introduction.md)
-- [Chapter 2 — Units and Measurement](chapters/02-units-and-measurement.md)
-- [Chapter 3 — Vectors](chapters/03-vectors.md)
-- [Chapter 4 — Motion Along a Straight Line](chapters/04-motion-along-a-straight-line.md)
-- [Chapter 5 — Chapter 5: Motion in Two and Three Dimensions](chapters/05-motion-in-two-and-three-dimensions.md)
-- [Chapter 6 — Newton's Laws of Motion](chapters/06-newton-s-laws-of-motion.md)
-- [Chapter 7 — Applications of Newton's Laws — Friction, Drag, and Centripetal Force](chapters/07-applications-of-newton-s-laws.md)
-- [Chapter 8 — Work and Kinetic Energy](chapters/08-work-and-kinetic-energy.md)
-- [Chapter 9 — Potential Energy and Conservation of Energy](chapters/09-potential-energy-and-conservation-of-energy.md)
-- [Chapter 10 — Linear Momentum and Collisions](chapters/10-linear-momentum-and-collisions.md)
-- [Chapter 11 — Fixed-Axis Rotation](chapters/11-fixed-axis-rotation.md)
-- [Chapter 12 — Angular Momentum](chapters/12-angular-momentum.md)
-- [Chapter 13 — Static Equilibrium and Elasticity](chapters/13-static-equilibrium-and-elasticity.md)
-- [Chapter 14 — Gravitation](chapters/14-gravitation.md)
-- [Chapter 15 — Fluid Mechanics: How Things Flow](chapters/15-fluid-mechanics.md)
-- [Chapter 17 — Oscillations](chapters/17-oscillations.md)
-- [Chapter 18 — Waves: Patterns That Travel](chapters/18-waves.md)
-- [Chapter 19 — Sound](chapters/19-sound.md)
-- [Back Matter](chapters/99-back-matter.md)
+- **Chapter 1: Units, Dimensions, and Estimation.** *The math of quantity itself — what a number must carry before it can mean anything.* On 23 September 1999, after nine months and 670 million kilometers, the Mars Climate Orbiter fired its engine to slip into orbit around Mars. It came...
+- **Chapter 2: Algebra and Equations in Physics.** *Solving for the symbol before the number — and reading what the symbol tells you.* Two blocks hang over a frictionless pulley on a single rope — the classic Atwood machine. One block has mass $m_1$, the other $m_2$. Released, the system...
+- **Chapter 3: Trigonometry and Geometry.** *Turning an angle into lengths — and the small-angle behavior that calculus and oscillation will need.* A block sits on a ramp tilted at angle $\theta$. Gravity pulls it straight down with force $mg$. But the block cannot move straight down —...
+- **Chapter 4: Vectors and Vector Algebra.** *Quantities with direction — and the two operations, alignment and twist, that make them computable.* You are in the right seat of a twin-engine airplane at 2,000 feet, the nose pointed northeast, the airspeed indicator reading 120 knots. But the air itself...
+- **Chapter 5: Functions, Graphs, and Power Laws.** *The shape of a relationship, and how to read an exponent off a straight line.* A **function** is a rule that assigns to each input exactly one output. We write $f(x)$ — read "$f$ of $x$" — for the output the rule...
+- **Chapter 6: Limits and the Derivative.** *How fast is it going* right now*? — the limit of a ratio of vanishing changes.* The **average velocity** of an object over a time interval is the change in position divided by the change in time: $$\bar{v} = \frac{x(t + \Delta...
+- **Chapter 7: Differentiation in Motion: Vector-Valued and Parametric Functions.** *The derivative scales up without a new idea: a vector function is several functions stacked, so you differentiate each one.* A particle moving through space has a position that is a vector changing in time — a **vector-valued function**: $$\vec{r}(t) = x(t)\,\hat{i}...
+- **Chapter 8: The Integral.** *The second question: how much accumulates? — and the theorem that reveals it is the first question run backwards.* Suppose a quantity accumulates as $f$ runs over an interval from $a$ to $b$ — distance accumulating as speed $v$ runs over time,...
+- **Chapter 9: Integration Techniques and Applications.** *Slice the object, write what each piece contributes, integrate — and the techniques are the derivative rules read backwards.* The Fundamental Theorem of the last chapter says integration undoes differentiation. So the two hardest differentiation rules, read backwards, become the two most...
+- **Chapter 10: Linear Systems and Matrices.** *When one equation is not enough: solving for several unknowns at once* A small pan hangs from a ceiling by two strings of unequal length, tied to two points a fixed distance apart. One string is short and steep; the other is...
+- **Chapter 11: Differential Equations and Oscillatory Motion.** *When the unknown is a function, not a number — and the equation tells you its rate of change* Pull a mass on a spring out to a distance $A$ from rest, hold it, and let go. You know, before releasing it,...
+- **Chapter 12: Complex Numbers and Exponentials.** *How an "impossible" number becomes the easiest language for oscillation* In the previous chapter the damped oscillator handed us a solution of the form $$x(t) = A_0\,e^{-bt/2m}\cos(\omega t + \phi).$$ Two things are happening at once: the amplitude is *decaying* (the $e^{-bt/2m}$...
+- **Chapter 13: Series, Expansions, and Approximations.** *Why "assume a small angle" is really a Taylor truncation — and how it makes the unsolvable solvable* A pendulum is the most familiar oscillator there is, and yet its exact equation of motion is, in a precise sense, unsolvable. Newton's second...
+- **Chapter 14: Partial Derivatives, the Wave Equation, and Fourier Analysis.** *Two variables, one partial differential equation, and the idea that any sound is a sum of pure tones* On December 26, 2004, the seafloor west of Sumatra ruptured and shoved a column of ocean upward. The disturbance spread across the Indian Ocean...
 
-## Copyright and License
+## Files
 
-Copyright © 2026 Humanitarians AI Incorporated. All rights reserved.
+- `chapters/00-frontmatter.md` — title page, copyright, dedication, and preface
+- `chapters/00-introduction.md` — roadmap and book-level AI note
+- `chapters/99-back-matter.md` — acknowledgments, author note, references placeholder, and Medhavy note
+- `LICENSE.md` — rights and reuse terms
 
-See [LICENSE.md](LICENSE.md) for permissions and restrictions.
+## Medhavy
 
-## Medhavy / Medhavi Integration
-
-This book is intended for Kindle, online reading, and integration with Medhavy, an AI-powered intelligent textbook system. The static manuscript provides the durable text; Medhavy can provide adaptive practice, glossary support, study paths, and feedback loops.
+This book is prepared for Kindle, online publication, and integration with Medhavy: https://www.medhavy.com/

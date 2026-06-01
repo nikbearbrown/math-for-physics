@@ -1,11 +1,33 @@
-# Mathematics for Physics
+# University Physics: with LLMs
 
-*The Tools, Derived on the Page, Motivated by Mechanics — Volume 1*
-
-**Nik Bear Brown**
+**Humanitarians AI Incorporated**
 
 ---
 
-### About this book
+## Copyright
 
-This is the mathematics behind the introductory mechanics-and-waves sequence — dimensional analysis, algebra and proportionality, trigonometry, vectors, functions and graphs, limits and derivatives, integrals, linear systems, differential equations, complex exponentials, series, and the wave equation — taught as mathematics rather than as physics. Every tool is derived on the page, motivated by one concrete physics problem, and then handed back to you as something general: not a formula to memorize for an exam, but a method you will use in chemistry, engineering, economics, and anywhere quantities relate to other quantities. No college calculus is assumed; it is built where the physics needs it. This is Volume 1. **Volume 2** carries the same project into the advanced tools — multivariable and vector calculus, the deeper linear algebra, and the partial differential equations of fields — for the sophomore sequence and beyond.
+Copyright © 2026 Humanitarians AI Incorporated. All rights reserved.
+
+Published by Humanitarians AI Incorporated, a 501(c)(3) nonprofit organization.
+
+No part of this publication may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the publisher, except in the case of brief quotations in critical reviews and certain other noncommercial uses permitted by copyright law.
+
+ISBN: [INSERT ISBN]
+
+First edition: 2026
+
+---
+
+## Dedication
+
+*[For the learners who keep asking better questions.]*
+
+---
+
+## Preface
+
+This book exists because University Physics: with LLMs needs a usable path for readers who want more than fragments, prompts, or disconnected explanations. It was written to gather the field into a sequence: first the core ideas, then the working vocabulary, then the cases and practices that make the ideas durable.
+
+The urgency is practical. Learners now meet every subject through search engines, AI systems, dashboards, tutorials, and partial answers. That abundance helps, but it also creates a new problem: it is easy to collect explanations without building judgment. This book is meant to slow the reader down just enough to see the structure of the subject.
+
+The authorial stance is applied and instructional. The goal is not to be encyclopedic. The goal is to give readers enough language, examples, and order that they can continue learning with better questions.
