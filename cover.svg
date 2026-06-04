@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2560" width="1600" height="2560" preserveAspectRatio="xMidYMid meet" shape-rendering="geometricPrecision">
+  <g id="background"><rect x="0" y="0" width="1600" height="2560" fill="#2B2B2B"/></g>
+  <g id="symbol-fragments" transform="rotate(-2, 800, 840)">
+    <rect x="297" y="209" width="36" height="474" fill="#F5F0E8"/>
+    <rect x="574" y="1287" width="58" height="151" fill="#F5F0E8"/>
+    <rect x="545" y="1454" width="80" height="188" fill="#F5F0E8"/>
+    <rect x="1366" y="1221" width="102" height="225" fill="#F5C518"/>
+    <rect x="1599" y="247" width="36" height="262" fill="#F5F0E8"/>
+    <rect x="270" y="215" width="58" height="299" fill="#F5F0E8"/>
+    <rect x="220" y="205" width="80" height="336" fill="#F5F0E8"/>
+    <rect x="284" y="227" width="102" height="373" fill="#F5F0E8"/>
+    <rect x="944" y="557" width="36" height="410" fill="#F5F0E8"/>
+    <rect x="256" y="236" width="58" height="447" fill="#F5F0E8"/>
+    <rect x="346" y="309" width="80" height="124" fill="#F5F0E8"/>
+  </g>
+  <g id="title-letterforms">
+    <text x="120" y="1510" font-family="Arial Black, Arial, sans-serif" font-size="250" font-weight="900" letter-spacing="0" fill="#F5F0E8" textLength="1300" lengthAdjust="spacingAndGlyphs">UNIVERSITY</text>
+    <text x="120" y="1768" font-family="Arial Black, Arial, sans-serif" font-size="250" font-weight="900" letter-spacing="0" fill="#F5C518" textLength="1300" lengthAdjust="spacingAndGlyphs">PHYSICS</text>
+  </g>
+</svg>
