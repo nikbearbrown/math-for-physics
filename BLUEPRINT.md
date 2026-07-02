@@ -1,4 +1,4 @@
-# TIKTOC.md — Mathematics for Physics
+# BLUEPRINT.md — Mathematics for Physics
 ## The Tools, Derived on the Page, Motivated by Mechanics
 **Author:** Nik Bear Brown
 **Status:** Reorganized from physics-topic to math-topic. Structure locked; ready for drafting.

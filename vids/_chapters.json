@@ -1,0 +1,112 @@
+{
+  "book": "math-for-physics",
+  "book_title": "University Physics — \"",
+  "chapter_count": 15,
+  "chapters": [
+    {
+      "file": "chapters/00-introduction.md",
+      "path": "/Users/nik/Documents/Cowork/math-for-physics/chapters/00-introduction.md",
+      "title": "Introduction",
+      "words": 1231,
+      "images": 0
+    },
+    {
+      "file": "chapters/01-units-dimensions-and-estimation.md",
+      "path": "/Users/nik/Documents/Cowork/math-for-physics/chapters/01-units-dimensions-and-estimation.md",
+      "title": "Units, Dimensions, and Estimation",
+      "words": 2830,
+      "images": 3
+    },
+    {
+      "file": "chapters/02-algebra-and-equations-in-physics.md",
+      "path": "/Users/nik/Documents/Cowork/math-for-physics/chapters/02-algebra-and-equations-in-physics.md",
+      "title": "Algebra and Equations in Physics",
+      "words": 2407,
+      "images": 3
+    },
+    {
+      "file": "chapters/03-trigonometry-and-geometry.md",
+      "path": "/Users/nik/Documents/Cowork/math-for-physics/chapters/03-trigonometry-and-geometry.md",
+      "title": "Trigonometry and Geometry",
+      "words": 2587,
+      "images": 3
+    },
+    {
+      "file": "chapters/04-vectors-and-vector-algebra.md",
+      "path": "/Users/nik/Documents/Cowork/math-for-physics/chapters/04-vectors-and-vector-algebra.md",
+      "title": "Vectors and Vector Algebra",
+      "words": 2536,
+      "images": 3
+    },
+    {
+      "file": "chapters/05-functions-graphs-and-power-laws.md",
+      "path": "/Users/nik/Documents/Cowork/math-for-physics/chapters/05-functions-graphs-and-power-laws.md",
+      "title": "Functions, Graphs, and Power Laws",
+      "words": 3204,
+      "images": 2
+    },
+    {
+      "file": "chapters/06-limits-and-the-derivative.md",
+      "path": "/Users/nik/Documents/Cowork/math-for-physics/chapters/06-limits-and-the-derivative.md",
+      "title": "Limits and the Derivative",
+      "words": 2752,
+      "images": 2
+    },
+    {
+      "file": "chapters/07-differentiation-in-motion.md",
+      "path": "/Users/nik/Documents/Cowork/math-for-physics/chapters/07-differentiation-in-motion.md",
+      "title": "Differentiation in Motion: Vector-Valued and Parametric Functions",
+      "words": 2582,
+      "images": 2
+    },
+    {
+      "file": "chapters/08-the-integral.md",
+      "path": "/Users/nik/Documents/Cowork/math-for-physics/chapters/08-the-integral.md",
+      "title": "The Integral",
+      "words": 2700,
+      "images": 2
+    },
+    {
+      "file": "chapters/09-integration-techniques-and-applications.md",
+      "path": "/Users/nik/Documents/Cowork/math-for-physics/chapters/09-integration-techniques-and-applications.md",
+      "title": "Integration Techniques and Applications",
+      "words": 2997,
+      "images": 2
+    },
+    {
+      "file": "chapters/10-linear-systems-and-matrices.md",
+      "path": "/Users/nik/Documents/Cowork/math-for-physics/chapters/10-linear-systems-and-matrices.md",
+      "title": "Linear Systems and Matrices",
+      "words": 3067,
+      "images": 2
+    },
+    {
+      "file": "chapters/11-differential-equations-and-oscillatory-motion.md",
+      "path": "/Users/nik/Documents/Cowork/math-for-physics/chapters/11-differential-equations-and-oscillatory-motion.md",
+      "title": "Differential Equations and Oscillatory Motion",
+      "words": 2901,
+      "images": 2
+    },
+    {
+      "file": "chapters/12-complex-numbers-and-exponentials.md",
+      "path": "/Users/nik/Documents/Cowork/math-for-physics/chapters/12-complex-numbers-and-exponentials.md",
+      "title": "Complex Numbers and Exponentials",
+      "words": 2715,
+      "images": 2
+    },
+    {
+      "file": "chapters/13-series-expansions-and-approximations.md",
+      "path": "/Users/nik/Documents/Cowork/math-for-physics/chapters/13-series-expansions-and-approximations.md",
+      "title": "Series, Expansions, and Approximations",
+      "words": 2953,
+      "images": 2
+    },
+    {
+      "file": "chapters/14-partial-derivatives-wave-equation-and-fourier.md",
+      "path": "/Users/nik/Documents/Cowork/math-for-physics/chapters/14-partial-derivatives-wave-equation-and-fourier.md",
+      "title": "Partial Derivatives, the Wave Equation, and Fourier Analysis",
+      "words": 3752,
+      "images": 2
+    }
+  ]
+}
